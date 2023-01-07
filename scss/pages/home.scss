@@ -4,6 +4,7 @@
 .containerxl {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 5px;
 }
 
 #imperia {
@@ -12,13 +13,29 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
-    align-items: center;
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 50px;
+  }
     .imperia-left {
+      display: flex;
+      align-items: center;
       img {
         width: 100%;
+        height: 100%;
+        @media (max-width: 850px) {
+          width: 100%;
+      }
       }
     }
     .imperia-right {
+      padding: 101px 0;
+      @media (max-width: 850px) {
+        padding: 50px 0;
+    }
+      @media (max-width: 600px) {
+        padding: 30px 0;
+    }
       h3 {
         max-width: 556px;
         font-weight: 600;
@@ -27,6 +44,9 @@
         letter-spacing: 0.25px;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #0d0d0d;
+        @media (max-width: 600px) {
+          font-size: 28px;        
+      }
       }
       p {
         padding: 24px 0;
@@ -37,6 +57,9 @@
         letter-spacing: 0.44px;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #000000;
+        @media (max-width: 600px) {
+          font-size: 13px;        
+      }
       }
       a {
         padding: 8px 23px;
@@ -74,5 +97,3 @@
     }
   }
 }
-
-
