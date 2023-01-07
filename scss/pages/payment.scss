@@ -1,1 +1,82 @@
 @use "../global.scss";
+@use "../abstracts/variables";
+@use "../abstracts/mixin";
+body {
+  background-color: #fafafa;
+}
+.container {
+  max-width: 1146px;
+  margin: 0 auto;
+  section {
+    .container-top {
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        margin-bottom: 80px;
+      }
+    }
+    .container-book {
+      display: flex;
+      justify-content: space-around;
+      .payme {
+        .book-left {
+          display: flex;
+          justify-content: space-between;
+          width: 460px;
+          height: 113px;
+          background-color: #ffc000;
+          padding: 16px;
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            display: flex;
+            align-items: flex-end;
+            letter-spacing: 0.15px;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #0d0d0d;
+          }
+          .book-left-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .book-left-right {
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+          }
+        }
+        .container-img {
+          padding-top: 48px;
+        }
+      }
+      .input-payment {
+        a {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 140%;
+          display: block;
+          letter-spacing: 0.75px;
+          text-transform: uppercase;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #0d0d0d;
+          width: 100%;
+          background-color: #ffc000;
+          padding: 21px 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
