@@ -129,3 +129,55 @@ footer {
   padding: 0 30px;
   margin: 0 auto;
 }
+
+.partner {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 172px;
+  padding-bottom: 80px;
+}
+.partner .partnership-lift {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 30px;
+  width: 100%;
+}
+.partner .partnership-lift h1 {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 64px;
+}
+.partner .partnership-lift h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+.partner .partnership-lift h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+.partner .partnership-right {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.partner .partnership-right input {
+  padding: 20px 20px;
+  font-family: cursive;
+  font-size: 20px;
+  width: 100%;
+}
+.partner .partnership-right textarea {
+  padding-left: 20px;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+@media (max-width: 1020px) {
+  .partner {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 10px;
+    grid-row-gap: 50px;
+  }
+}
