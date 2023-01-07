@@ -21,7 +21,7 @@
     .imperia-right {
       h3 {
         max-width: 556px;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 34px;
         line-height: 140%;
         letter-spacing: 0.25px;
@@ -48,7 +48,7 @@
         text-transform: uppercase;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #000000;
-        background: $primary-color;
+        background: #ffc000;
         border-radius: 6px;
       }
     }
@@ -56,8 +56,14 @@
 }
 
 #discount {
+  margin: 48px 0 80px;
+  background: #ffc000;
   .discount {
+    padding: 173px 0;
+    display: flex;
+    justify-content: center;
     h1 {
+      max-width: 666px;
       font-weight: 700;
       font-size: 34px;
       line-height: 140%;
@@ -68,3 +74,5 @@
     }
   }
 }
+
+
