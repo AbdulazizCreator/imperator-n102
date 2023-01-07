@@ -56,20 +56,15 @@
 }
 
 #discount {
-    background-color: $primary-color;
   .discount {
-    display: flex;
-    justify-content: center;
-    .discount-content {
-      h1 {
-        font-weight: 700;
-        font-size: 34px;
-        line-height: 140%;
-        text-align: center;
-        letter-spacing: 0.25px;
-        font-feature-settings: "pnum" on, "lnum" on;
-        color: #0d0d0d;
-      }
+    h1 {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.25px;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #0d0d0d;
     }
   }
 }
