@@ -1,1 +1,75 @@
 @use "../global.scss";
+@use "../components/download-app";
+
+.containerxl {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#imperia {
+  background-color: #ffffff;
+  .imperia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    align-items: center;
+    .imperia-left {
+      img {
+        width: 100%;
+      }
+    }
+    .imperia-right {
+      h3 {
+        max-width: 556px;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #0d0d0d;
+      }
+      p {
+        padding: 24px 0;
+        max-width: 558px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+      }
+      a {
+        padding: 8px 23px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        background: $primary-color;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+#discount {
+    background-color: $primary-color;
+  .discount {
+    display: flex;
+    justify-content: center;
+    .discount-content {
+      h1 {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #0d0d0d;
+      }
+    }
+  }
+}
