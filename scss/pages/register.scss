@@ -1,1 +1,48 @@
 @use "../global.scss";
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regester{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 140px;
+    padding-bottom: 80px;
+   
+}
+.regester-lift{
+    padding-top: 70px;
+}
+.partnership-right{
+        display: grid;
+        grid-template-rows: auto;
+        gap: 20px;
+
+        input {
+            padding: 20px 20px;
+            font-family: cursive;
+            font-size: 20px;
+            width: 100%;
+        }
+        a{
+            padding: 10px 60px;
+            border: 1px solid black;
+            background-color: #FFC000;
+            color: white;
+        }
+}
+@media(max-width:900px){
+    .regester{
+        grid-template-columns: auto;
+        gap: 50px;
+        padding-top: 0px;
+    }
+    .partnership-right{
+        padding: 0;
+        width: 100%;
+    }
+}
+
+

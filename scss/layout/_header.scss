@@ -34,17 +34,16 @@
       }
     }
   }
-  &__logo {
-    margin-right: 98px;
-  }
+    &__logo {
+      margin-right: 98px;
+    }
   &__menus {
     @include mixin.flex-box(row, space-between, center);
-    flex-grow: 1;
   }
   &__list {
     @include mixin.flex-box(row, center, center);
-    margin-right: 16px;
-    a {
+    margin-right: 197px;
+    .link {
       font: var.$body-font;
       color: #000;
       margin: 0 12px;
@@ -53,8 +52,12 @@
   &__join {
     @include mixin.flex-box(row, center, center);
     gap: 15px;
-    button {
+  }
+  &__side{
+    @include mixin.flex-box(row,space-between,center);
+    .cart-btn{
       margin-left: 28px;
+      cursor: pointer;
     }
   }
   .toggle-btn {
@@ -65,13 +68,14 @@
     border: none;
   }
   .sign {
+    text-align: center;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     padding: 5px 10px;
     letter-spacing: 0.44px;
-    font-feature-settings: "pnum" on, "lnum" on;
+    // font-feature-settings: "pnum" on, "lnum" on;
     color: #0d0d0d;
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 4px;
@@ -88,14 +92,20 @@
   box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, 0.2);
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1220px) {
   .navbar {
+    &__logo{
+      display: none;
+    }
+    .container__bottom{
+      background-color: #fff;
+    }
     &__menus {
       position: fixed;
       @include mixin.flex-box(column, center, center);
       flex-wrap: nowrap;
       top: 0;
-      right: -1500px;
+      left: -1500px;
       bottom: 0;
       width: 100%;
       transition: 0.3s;
@@ -116,6 +126,16 @@
       font-size: 1.875rem;
       line-height: 55px;
       color: #fff;
+    }
+    &__side{
+      position: relative;
+      width: 100%;
+      .toggle-btn:after{
+        content: url('../../images/home/Logo.svg');
+        position: absolute;
+        top: -6px;
+        left: 40px;
+         }
     }
     .sign:hover{
         background-color: #000;
