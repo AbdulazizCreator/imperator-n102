@@ -5,68 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/home.min.css" />
+    <!-- <link rel="stylesheet" href="css/about.css"> -->
     <title>Safarmurod & Jahongir</title>
   </head>
+
   <body>
     <header>
       <nav id="navbar" class="navbar" w3-include-html="nav.html"></nav>
     </header>
-    <main>
-      <!--SAFARMUROD-->
-      <section class="home">
-        <div class="container"></div>
-      </section>
-      <!-- JAHONGIR -->
-      <section id="download">
-        <div class="container">
-          <div class="download">
-            <div class="download-left">
-              <img src="./images/home/download-app.png" alt="" />
+    <!--SAFARMUROD-->
+    <section class="home">
+      <div class="home__top">
+        <img src="images/home/home-img2.svg" alt="images" />
+        <img class="carousel" src="images/home/carousel.svg" alt="images" />
+      </div>
+      <div class="container home__xs">
+        <div class="home__content">
+          <h1 class="home__title">Быстрый и удобный шоппинг</h1>
+          <p class="home__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+            lectus odio vitae, duis nec ut velit, fermentum.
+          </p>
+          <a href="#"
+            ><img src="images/home/Polygon 1.svg" alt="Polygon" />Все товары</a
+          >
+        </div>
+      </div>
+      <div class="container home__lg">
+        <div class="home__content">
+          <h1 class="home__title">
+            Быстрый и удобный шоппинг, не выходя из дома.
+          </h1>
+          <p class="home__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+            lectus odio vitae, duis nec ut velit, fermentum.
+          </p>
+          <a href="#"
+            ><img src="images/home/polygon-white.svg" alt="Polygon" />Все
+            товары</a
+          >
+        </div>
+        <!-- <div class="home__left"><img src="images/home/home-img.svg" alt="ima"></div>
+  </div> -->
+      </div>
+      <img
+        id="carousell"
+        class="carousel"
+        src="images/home/carousel.svg"
+        alt="images"
+      />
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h1 class="advantages__title">Наши преимущества</h1>
+        <div class="advantages__row">
+          <a href="about.html">
+            <div class="advantages__card">
+              <img src="images/home/ic_stars.svg" alt="ima" />
+              <p>Лучший сервис</p>
             </div>
-            <div class="download-right">
-              <h3>Скачай приложение и получай призы каждый день</h3>
+          </a>
+          <a href="about.html"
+            ><div class="advantages__card">
+              <img src="images/home/ic_truck.svg" alt="ima" />
+              <p>Экспресс доставка</p>
+            </div></a
+          >
+          <a href="about.html">
+            <div class="advantages__card">
+              <img src="images/home/ic_like.svg" alt="ima" />
+              <p>Лучшее качество в стране</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <h1 class="product__title">Лучшие товары</h1>
+        <div class="product__row">
+          <div class="product__card">
+            <img src="images/home/product-card-1.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
               <p>
-                Скачав наш приложение вы получаете возможность играть в призовые
-                игры каждый день и выигровать разного рода подарки для себя.
-                <br />
-                В нашем приложении призовые игры проходят аблолютно каждый день
-                и всё это совершенно бесплатно.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
               </p>
-              <div class="download__right-downloadapp">
-                <a href="#"><img src="images/home/app-store.svg" alt="" /></a>
-                <a href="#"><img src="images/home/google-play.svg" alt="" /></a>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store">
+                <h6>855 у.е.</h6>
               </div>
+              <a href="cart.html"><button class="add-btn">Добавить в корзину</button></a>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="imperia">
-        <div class="containerxl">
-          <div class="imperia">
-            <div class="imperia-left">
-              <img src="./images/home/imperia-img.png" alt="" />
-            </div>
-            <div class="imperia-right">
-              <h3>Создай свой лук на все случаи жизни в “Imperia”</h3>
+          <div class="product__card">
+            <img src="images/home/product-card-2.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-                sollicitudin a cursus in. Vel sit donec semper magna dignissim.
-                Amet, mi justo at metus vestibulum sollicitudin lacus. Nunc vel
-                egestas fermentum pellentesque sed vitae vel.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
               </p>
-              <a href="#">начать покупки</a>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store">
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"><button class="add-btn">Добавить в корзину</button></a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img src="images/home/product-card-3.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store">
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"><button class="add-btn">Добавить в корзину</button></a>
+            </div>
+          </div>
+          <div class="product__card">
+            <img src="images/home/product-card-4.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store">
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"><button class="add-btn">Добавить в корзину</button></a>
             </div>
           </div>
         </div>
-      </section>
-      <section id="discount">
-        <div class="container">
-          <div class="discount">
-            <h1>Скидка 30% на первую покупку обслютно для всех</h1>
+      </div>
+    </section>
+    <!-- JAHONGIR -->
+    <section id="download">
+      <div class="container">
+        <div class="download">
+          <div class="download-left">
+            <img src="./images/home/download-app.png" alt="" />
+          </div>
+          <div class="download-right">
+            <h3>Скачай приложение и получай призы каждый день</h3>
+            <p>
+              Скачав наш приложение вы получаете возможность играть в призовые
+              игры каждый день и выигровать разного рода подарки для себя.
+              <br />
+              В нашем приложении призовые игры проходят аблолютно каждый день и
+              всё это совершенно бесплатно.
+            </p>
+            <div class="download__right-downloadapp">
+              <a href="#"><img src="images/home/app-store.svg" alt="" /></a>
+              <a href="#"><img src="images/home/google-play.svg" alt="" /></a>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <section id="imperia">
+      <div class="containerxl">
+        <div class="imperia">
+          <div class="imperia-left">
+            <img src="./images/home/imperia-img.png" alt="" />
+          </div>
+          <div class="imperia-right">
+            <h3>Создай свой лук на все случаи жизни в “Imperia”</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+              sollicitudin a cursus in. Vel sit donec semper magna dignissim.
+              Amet, mi justo at metus vestibulum sollicitudin lacus. Nunc vel
+              egestas fermentum pellentesque sed vitae vel.
+            </p>
+            <a href="#">начать покупки</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="discount">
+      <div class="container">
+        <div class="discount">
+          <h1>Скидка 30% на первую покупку обслютно для всех</h1>
+        </div>
+      </div>
+    </section>
+
     <footer w3-include-html="footer.html"></footer>
     <script src="js/main.js"></script>
   </body>

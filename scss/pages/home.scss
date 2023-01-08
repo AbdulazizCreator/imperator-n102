@@ -1,6 +1,8 @@
 @use "../global.scss";
 @use "../components/download-app";
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixin";
+@use "../components/product-card";
 .containerxl {
   max-width: 1440px;
   margin: 0 auto;
@@ -8,6 +10,9 @@
 }
 
 .home {
+  .carousel{
+    display: none;
+  }
   margin-top: 117px;
   &__top {
     position: relative;
@@ -73,9 +78,80 @@
   }
 }
 
+.advantages {
+  padding: 67px 0 80px;
+  .container {
+    padding: 0;
+    @include mixin.flex-box(column, center, center);
+  }
+  &__row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  &__card{
+    padding: 27px 29px;
+    background-color: #ffffff;
+
+    text-align: center;
+    @include mixin.flex-box(column,center,center);
+    img{
+      margin-bottom: 48px;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 140%;
+    text-align: left;
+    letter-spacing: 0.25px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+
+}
+
+
+
+@media (min-width:500px){
+  .advantages{
+    .container{
+      padding: 0 30px;
+    }
+    &__card{
+
+      border-radius: 12px;
+    }
+  }
+}
+@media (min-width:990px){
+  .advantages{
+    &__row{
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 20px;
+      justify-content: space-between;
+    }
+
+  }
+}
 @media (min-width: 1180px) {
   .home {
-    padding: 230px 0 330px;
+    position: relative;
+    // background: linear-gradient(99.05deg, #E1AA00 0%, #FFC000 74.72%);
+    background-image: url("../../images/home/background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 189px;
+    .carousel {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 31px;
+    }
     &__xs {
       display: none;
     }
@@ -83,17 +159,23 @@
       display: none;
     }
     &__lg {
+      padding-top: 203px;
+      padding-bottom: 189px;
       position: relative;
       display: block;
-      a{
+      a {
         font-size: 14px;
         color: white;
       }
-
     }
-    &__left{
+    // &__content{
+    //   padding: 30px 0 150px;
+    //   background-color: #000000;
+    // }
+    &__left {
       position: absolute;
       right: 0;
+      top: 0;
     }
     &__title {
       max-width: 588px;
@@ -113,6 +195,17 @@
       line-height: 140%;
       color: white;
     }
+  }
+  .advantages{
+    &__row{
+      grid-template-columns: repeat(3,1fr);
+
+      grid-gap: 140px;
+    }
+    &__card{
+      width: 294px;
+    }
+
   }
 }
 
