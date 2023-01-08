@@ -105,6 +105,7 @@ ul {
 }
 .navbar__side .cart-btn {
   margin-left: 28px;
+  cursor: pointer;
 }
 .navbar .toggle-btn {
   display: none;
@@ -137,7 +138,7 @@ ul {
   padding: 14px 30px !important;
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1220px) {
   .navbar__logo {
     display: none;
   }
@@ -419,6 +420,112 @@ footer {
   padding: 0 5px;
 }
 
+.home {
+  margin-top: 117px;
+}
+.home__top {
+  position: relative;
+}
+.home__top img {
+  width: 100%;
+}
+.home__top .carousel {
+  position: absolute;
+  width: 72px;
+  height: 16px;
+  rotate: 90deg;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.home__lg {
+  display: none;
+}
+.home__title {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  /* or 34px */
+  display: flex;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.home__text {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.1px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.home a {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0d0d0d;
+}
+.home a img {
+  margin-right: 10px;
+}
+.home a:hover {
+  color: #FFC000;
+}
+.home a:hover img {
+  content: url("../../images/home/Polygon-yellow.svg");
+}
+
+@media (min-width: 1180px) {
+  .home {
+    padding: 230px 0 330px;
+  }
+  .home__xs {
+    display: none;
+  }
+  .home__top {
+    display: none;
+  }
+  .home__lg {
+    position: relative;
+    display: block;
+  }
+  .home__lg a {
+    font-size: 14px;
+    color: white;
+  }
+  .home__left {
+    position: absolute;
+    right: 0;
+  }
+  .home__title {
+    max-width: 588px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #ffffff;
+  }
+  .home__text {
+    max-width: 588px;
+    font-size: 14px;
+    line-height: 140%;
+    color: white;
+  }
+}
 #imperia {
   background-color: #ffffff;
 }

@@ -57,6 +57,7 @@
     @include mixin.flex-box(row,space-between,center);
     .cart-btn{
       margin-left: 28px;
+      cursor: pointer;
     }
   }
   .toggle-btn {
@@ -91,7 +92,7 @@
   box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, 0.2);
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1220px) {
   .navbar {
     &__logo{
       display: none;

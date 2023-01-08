@@ -1,13 +1,120 @@
 @use "../global.scss";
 @use "../components/download-app";
-
+@use "../abstracts/variables" as var;
 .containerxl {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 5px;
 }
 
+.home {
+  margin-top: 117px;
+  &__top {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .carousel {
+      position: absolute;
+      width: 72px;
+      height: 16px;
+      rotate: 90deg;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+  &__lg {
+    display: none;
+  }
+  &__title {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
 
+    display: flex;
+    align-items: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+  &__text {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.1px;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+  a {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #0d0d0d;
+    img {
+      margin-right: 10px;
+    }
+  }
+  a:hover {
+    color: var.$primary-color;
+    img {
+      content: url("../../images/home/Polygon-yellow.svg");
+    }
+  }
+}
+
+@media (min-width: 1180px) {
+  .home {
+    padding: 230px 0 330px;
+    &__xs {
+      display: none;
+    }
+    &__top {
+      display: none;
+    }
+    &__lg {
+      position: relative;
+      display: block;
+      a{
+        font-size: 14px;
+        color: white;
+      }
+
+    }
+    &__left{
+      position: absolute;
+      right: 0;
+    }
+    &__title {
+      max-width: 588px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 140%;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.25px;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #ffffff;
+    }
+    &__text {
+      max-width: 588px;
+      font-size: 14px;
+      line-height: 140%;
+      color: white;
+    }
+  }
+}
 
 #imperia {
   background-color: #ffffff;
@@ -18,7 +125,7 @@
     @media (max-width: 600px) {
       grid-template-columns: 1fr;
       grid-row-gap: 50px;
-  }
+    }
     .imperia-left {
       display: flex;
       align-items: center;
@@ -27,17 +134,17 @@
         height: 100%;
         @media (max-width: 850px) {
           width: 100%;
-      }
+        }
       }
     }
     .imperia-right {
       padding: 101px 0;
       @media (max-width: 850px) {
         padding: 50px 0;
-    }
+      }
       @media (max-width: 600px) {
         padding: 30px 0;
-    }
+      }
       h3 {
         max-width: 556px;
         font-weight: 600;
@@ -47,8 +154,8 @@
         font-feature-settings: "pnum" on, "lnum" on;
         color: #0d0d0d;
         @media (max-width: 600px) {
-          font-size: 28px;        
-      }
+          font-size: 28px;
+        }
       }
       p {
         padding: 24px 0;
@@ -60,8 +167,8 @@
         font-feature-settings: "pnum" on, "lnum" on;
         color: #000000;
         @media (max-width: 600px) {
-          font-size: 13px;        
-      }
+          font-size: 13px;
+        }
       }
       a {
         padding: 8px 23px;

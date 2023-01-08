@@ -105,6 +105,7 @@ ul {
 }
 .navbar__side .cart-btn {
   margin-left: 28px;
+  cursor: pointer;
 }
 .navbar .toggle-btn {
   display: none;
@@ -137,7 +138,7 @@ ul {
   padding: 14px 30px !important;
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1220px) {
   .navbar__logo {
     display: none;
   }
