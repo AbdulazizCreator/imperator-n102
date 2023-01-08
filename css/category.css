@@ -74,6 +74,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 .navbar__list {
   display: flex;
@@ -81,9 +82,9 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 197px;
+  margin-right: 16px;
 }
-.navbar__list .link {
+.navbar__list a {
   font: normal 500 14px/19.6px "Montserrat";
   color: #000;
   margin: 0 12px;
@@ -96,16 +97,8 @@ ul {
   flex-wrap: wrap;
   gap: 15px;
 }
-.navbar__side {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.navbar__side .cart-btn {
+.navbar__join button {
   margin-left: 28px;
-  cursor: pointer;
 }
 .navbar .toggle-btn {
   display: none;
@@ -115,13 +108,13 @@ ul {
   border: none;
 }
 .navbar .sign {
-  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   padding: 5px 10px;
   letter-spacing: 0.44px;
+  font-feature-settings: "pnum" on, "lnum" on;
   color: #0d0d0d;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -138,13 +131,7 @@ ul {
   padding: 14px 30px !important;
 }
 
-@media (max-width: 1220px) {
-  .navbar__logo {
-    display: none;
-  }
-  .navbar .container__bottom {
-    background-color: #fff;
-  }
+@media (max-width: 1170px) {
   .navbar__menus {
     position: fixed;
     display: flex;
@@ -154,7 +141,7 @@ ul {
     flex-wrap: wrap;
     flex-wrap: nowrap;
     top: 0;
-    left: -1500px;
+    right: -1500px;
     bottom: 0;
     width: 100%;
     transition: 0.3s;
@@ -174,16 +161,6 @@ ul {
     font-size: 1.875rem;
     line-height: 55px;
     color: #fff;
-  }
-  .navbar__side {
-    position: relative;
-    width: 100%;
-  }
-  .navbar__side .toggle-btn:after {
-    content: url("../../images/home/Logo.svg");
-    position: absolute;
-    top: -6px;
-    left: 40px;
   }
   .navbar .sign:hover {
     background-color: #000;
@@ -536,6 +513,29 @@ main {
   padding: 12px 75px;
   letter-spacing: 0.04em;
   font-feature-settings: "pnum" on, "lnum" on;
+  font-weight: 100000px;
+  color: #0d0d0d;
+}
+.buttons button p:hover {
+  color: black;
+}
+.buttons button:hover {
+  background-color: rgb(178, 175, 175);
+  transition: 0.5s;
+}
+
+@media (max-width: 1140px) {
+  .category-cards-rigth {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  .category {
+    display: none;
+  }
+  .category-cards-left {
+    display: none;
+  }
+}tings: "pnum" on, "lnum" on;
   font-weight: 100000px;
   color: #0d0d0d;
 }
