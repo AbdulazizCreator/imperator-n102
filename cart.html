@@ -8,11 +8,47 @@
     <link rel="stylesheet" href="./css/cart.min.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav id="navbar" class="navbar">
+        <div class="navbar__top">
+          <div class="container">
+            <p>RU <span> UZB</span></p>
+          </div>
+        </div>
+        <div class="container container__bottom" style="padding: 21px 30px">
+          <div class="navbar__logo">
+            <a href="#"
+              ><img src="images/home/navbar-logo.svg" alt="logo-main"
+            /></a>
+          </div>
+          <div class="navbar__menus" id="navbar-responsive">
+            <ul class="navbar__list">
+              <li><a class="link" href="#product">Главная</a></li>
+              <li><a class="link" href="#customer">O нас</a></li>
+              <li><a class="link" href="#price">Категории</a></li>
+              <li><a class="link" href="#join">Сотрудничество</a></li>
+              <button class="toggle-btn close-btn" onclick="closeNavbar()">
+                <img src="images/header/close.svg" alt="menu" />
+              </button>
+            </ul>
+            <div class="navbar__join">
+              <a class="sign sign-in" href="#">Войти</a>
+              <a class="sign sign-up" href="#">Зарегистрироваться</a>
+              <button class="cart-btn">
+                <img src="images/home/navbar-cart.svg" alt="light-dark" />
+              </button>
+            </div>
+          </div>
+          <button class="toggle-btn" onclick="openNavbar()">
+            <img src="images/header/menu.svg" alt="menus" />
+          </button>
+        </div>
+      </nav>
+    </header>
     <section class="cart-lorem container">
       <div class="lorem-left">
         <img src="./images/cart/man-dress.png" alt="blue man" />
-        <div>
+        <div class="card-bottom">
           <img src="./images/cart/man-dress.png" alt="blue mans" />
           <img src="./images/cart/man-dress.png" alt="blue mans" />
           <img src="./images/cart/man-dress.png" alt="blue mans" />
@@ -25,7 +61,7 @@
           <img src="./images/cart/starfull.svg" alt="fullstar" />
           <img src="./images/cart/starfull.svg" alt="fullstar" />
           <img src="./images/cart/starfull.svg" alt="fullstar" />
-          <img src="./images/cart/starwhite.svg" alt="whitestar" />
+          <img src="./images/cart/Subtract.svg" alt="whitestar" />
           <img src="./images/cart/starwhite.svg" alt="whitestar" />
           <p>3,5</p>
         </div>
@@ -39,13 +75,15 @@
         <div class="right-numbers">
           <div class="order">28</div>
           <div class="order">30</div>
-          <div class="order">32</div>
+          <div class="ordered">32</div>
           <div class="order">34</div>
           <div class="order">36</div>
         </div>
-        <a class="right-send" href="">Добавить в корзину</a>
-        <a href="right-next">Быстрая покупка</a>
-        <h3>Преимущества</h3>
+        <div class="link">
+          <a class="right-send" href="">Добавить в корзину</a>
+          <a class="right-next" href="">Быстрая покупка</a>
+        </div>
+        <h3 class="right-prefer">Преимущества</h3>
         <div class="right-prefers">
           <div class="top">
             <div class="delivery">
@@ -74,9 +112,12 @@
       <h2 class="products-title">Похожие товары</h2>
       <div class="products-chart">
         <div class="products-cards">
-          <img src="" alt="" />
-          <h4></h4>
-          <p></p>
+          <img src="./images/cart/blackman.png" alt="blackman" />
+          <h4>Lorem ipsum dolor sit amet</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+            odio sed nascetur.
+          </p>
           <div class="products-star">
             <div class="evaluation">
               <img src="./images/cart/starfull.svg" alt="fullstar" />
@@ -86,14 +127,17 @@
               <img src="./images/cart/starwhite.svg" alt="whitestar" />
               <p>3,5</p>
             </div>
-            <p></p>
+            <p>855 у.е.</p>
           </div>
           <a href="">Добавить в корзину</a>
         </div>
         <div class="products-cards">
-          <img src="" alt="" />
-          <h4></h4>
-          <p></p>
+          <img src="./images/cart/whiteman.png" alt="whiteman" />
+          <h4>Lorem ipsum dolor sit amet</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+            odio sed nascetur.
+          </p>
           <div class="products-star">
             <div class="evaluation">
               <img src="./images/cart/starfull.svg" alt="fullstar" />
@@ -103,14 +147,17 @@
               <img src="./images/cart/starwhite.svg" alt="whitestar" />
               <p>3,5</p>
             </div>
-            <p></p>
+            <p>855 у.е.</p>
           </div>
           <a href="">Добавить в корзину</a>
         </div>
         <div class="products-cards">
-          <img src="" alt="" />
-          <h4></h4>
-          <p></p>
+          <img src="./images/cart/yellowman.png" alt="yellowman" />
+          <h4>Lorem ipsum dolor sit amet</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+            odio sed nascetur.
+          </p>
           <div class="products-star">
             <div class="evaluation">
               <img src="./images/cart/starfull.svg" alt="fullstar" />
@@ -120,14 +167,17 @@
               <img src="./images/cart/starwhite.svg" alt="whitestar" />
               <p>3,5</p>
             </div>
-            <p></p>
+            <p>855 у.е.</p>
           </div>
           <a href="">Добавить в корзину</a>
         </div>
         <div class="products-cards">
-          <img src="" alt="" />
-          <h4></h4>
-          <p></p>
+          <img src="./images/cart/chetellik.png" alt="chetellik" />
+          <h4>Lorem ipsum dolor sit amet</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+            odio sed nascetur.
+          </p>
           <div class="products-star">
             <div class="evaluation">
               <img src="./images/cart/starfull.svg" alt="fullstar" />
@@ -137,7 +187,7 @@
               <img src="./images/cart/starwhite.svg" alt="whitestar" />
               <p>3,5</p>
             </div>
-            <p></p>
+            <p>855 у.е.</p>
           </div>
           <a href="">Добавить в корзину</a>
         </div>
@@ -148,25 +198,25 @@
       <div class="sort">
         <div class="sort-img">
           <div class="img">
-            <img src="./images/cart/redjacet.png" alt="jacet">
+            <img src="./images/cart/redjacet.png" alt="jacet" />
           </div>
           <p>Women’s wear</p>
         </div>
         <div class="sort-img">
           <div class="img">
-            <img src="./images/cart/complect.png" alt="complect">
+            <img src="./images/cart/complect.png" alt="complect" />
           </div>
           <p>Men’s wear</p>
         </div>
         <div class="sort-img">
           <div class="img">
-            <img src="./images/cart/dress.png" alt="dress">
+            <img src="./images/cart/dress.png" alt="dress" />
           </div>
           <p>Kid’s wear</p>
         </div>
         <div class="sort-img">
           <div class="img">
-            <img src="./images/cart/shoes.png" alt="shoes">
+            <img src="./images/cart/shoes.png" alt="shoes" />
           </div>
           <p>Shoes</p>
         </div>
