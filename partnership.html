@@ -8,6 +8,43 @@
     <link rel="stylesheet" href="css/partnership.min.css">
 </head>
 <body>
+  <header>
+    <nav id="navbar" class="navbar">
+        <div class="navbar__top">
+            <div class="container">
+                <p>RU <span> UZB</span></p>
+            </div>
+        </div>
+      <div class="container container__bottom" style="padding: 21px 30px">
+        <div class="navbar__logo">
+          <a href="#"
+            ><img src="images/home/navbar-logo.svg" alt="logo-main"
+          /></a>
+        </div>
+        <div class="navbar__menus" id="navbar-responsive">
+          <ul class="navbar__list">
+            <li><a class="link" href="#product">Главная</a></li>
+            <li><a class="link" href="#customer">O нас</a></li>
+            <li><a class="link" href="#price">Категории</a></li>
+            <li><a class="link" href="#join">Сотрудничество</a></li>
+            <button class="toggle-btn close-btn" onclick="closeNavbar()">
+              <img src="images/header/close.svg" alt="menu" />
+            </button>
+          </ul>
+          <div class="navbar__join">
+            <a class="sign sign-in" href="#">Войти</a>
+            <a class="sign sign-up" href="#">Зарегистрироваться</a>
+            <button class="cart-btn">
+              <img src="images/home/navbar-cart.svg" alt="light-dark" />
+            </button>
+          </div>
+        </div>
+        <button class="toggle-btn" onclick="openNavbar()">
+          <img src="images/header/menu.svg" alt="menus" />
+        </button>
+      </div>
+    </nav>
+  </header>
   <main>
     <div class="container">
      <div class="partner">
@@ -16,7 +53,7 @@
           оставьте заявку для <br> сотрудничества
         </h1>
         <div>
-          <h3>Phone:</h3>
+          <h3>Phone</h3>
           <h4>+1 848 493 944</h4>
         </div>
        <div>
@@ -35,13 +72,6 @@
      </div>
     </div>
   </main>
-    
-
-
-
-
-
-
     <footer>
         <div class="container">
           <div class="footer">
@@ -98,5 +128,6 @@
           </div>
         </div>
       </footer>
+      <script src="js/main.js"></script>
 </body>
 </html>
