@@ -8,180 +8,59 @@
     <link rel="stylesheet" href="css/payment.min.css" />
   </head>
   <body>
+    <header>
+      <nav id="navbar" class="navbar">
+        <div class="navbar__top">
+          <div class="container">
+            <p>RU <span> UZB</span></p>
+          </div>
+        </div>
+        <div class="container container__bottom" style="padding: 21px 30px">
+          <div class="navbar__logo">
+            <a href="#"
+              ><img src="images/home/navbar-logo.svg" alt="logo-main"
+            /></a>
+          </div>
+          <div class="navbar__menus" id="navbar-responsive">
+            <ul class="navbar__list">
+              <li><a class="link" href="#product">Главная</a></li>
+              <li><a class="link" href="#customer">O нас</a></li>
+              <li><a class="link" href="#price">Категории</a></li>
+              <li><a class="link" href="#join">Сотрудничество</a></li>
+              <button class="toggle-btn close-btn" onclick="closeNavbar()">
+                <img src="images/header/close.svg" alt="menu" />
+              </button>
+            </ul>
+            <div class="navbar__join">
+              <a class="sign sign-in" href="#">Войти</a>
+              <a class="sign sign-up" href="#">Зарегистрироваться</a>
+              <button class="cart-btn">
+                <img src="images/home/navbar-cart.svg" alt="light-dark" />
+              </button>
+            </div>
+          </div>
+          <button class="toggle-btn" onclick="openNavbar()">
+            <img src="images/header/menu.svg" alt="menus" />
+          </button>
+        </div>
+      </nav>
+    </header>
     <div class="container">
-      <header>
-        <nav id="navbar" class="navbar">
-            <div class="navbar__top">
-                <div class="container">
-                    <p>RU <span> UZB</span></p>
-                </div>
-            </div>
-          <div class="container container__bottom" style="padding: 21px 30px">
-            <div class="navbar__logo">
-              <a href="#"
-                ><img src="images/home/navbar-logo.svg" alt="logo-main"
-              /></a>
-            </div>
-            <div class="navbar__menus" id="navbar-responsive">
-              <ul class="navbar__list">
-                <li><a class="link" href="#product">Главная</a></li>
-                <li><a class="link" href="#customer">O нас</a></li>
-                <li><a class="link" href="#price">Категории</a></li>
-                <li><a class="link" href="#join">Сотрудничество</a></li>
-                <button class="toggle-btn close-btn" onclick="closeNavbar()">
-                  <img src="images/header/close.svg" alt="menu" />
-                </button>
-              </ul>
-              <div class="navbar__join">
-                <a class="sign sign-in" href="#">Войти</a>
-                <a class="sign sign-up" href="#">Зарегистрироваться</a>
-                <button class="cart-btn">
-                  <img src="images/home/navbar-cart.svg" alt="light-dark" />
-                </button>
-              </div>
-            </div>
-            <button class="toggle-btn" onclick="openNavbar()">
-              <img src="images/header/menu.svg" alt="menus" />
-            </button>
-          </div>
-        </nav>
-      </header>
-      <section>
-        <div class="container-top">
-          <h1>Оформление заказа</h1>
+      <div class="container-payment">
+        <h1>Оплата</h1>
+      </div>
+      <div class="container-pay">
+        <div class="container-pay-img">
+          <img src="images/payment/karta.svg" alt="" />
         </div>
-        <div class="container-book">
-          <div class="payme">
-            <div class="book-left">
-              <div class="book-left-left">
-                <p>Товаров: (1)</p>
-                <p>Общая сумма к оплате:</p>
-              </div>
-              <div class="book-left-right">
-                <p>Сумма: $235</p>
-                <p>$235</p>
-              </div>
-            </div>
-            <div class="container-img">
-              <img
-                src="images/payment/click.svg"
-                style="padding-right: 44px"
-                alt=""
-              />
-              <img src="images/payment/Group 193.svg" alt="" />
-            </div>
-          </div>
-          <div class="input-payment">
-            <input type="text" placeholder="Адресс доставки" />
-            <input type="text" placeholder="Имя" />
-            <input type="tel" placeholder="Номер телефона" />
-            <a href="#">Перейти к оплате</a>
-          </div>
+        <div class="container-pay-pay">
+          <input type="text" class="input" placeholder="Имя на карте" />
+          <input type="number" class="input" placeholder="Номер карты" />
+          <p>Cрок хранения</p>
+          <input type="number" placeholder="MM/YY" />
+          <a href="#">Перейти к оплате</a>
         </div>
-        <div class="container-order">
-          <h1>Ваш заказ</h1>
-          <div class="container-hoodie">
-            <div class="container-hoodie-img">
-              <img src="images/payment/boy.svg" alt="" />
-            </div>
-            <div class="container-hoodie-comment">
-              <h2>Худи мужская белая с принтом.</h2>
-              <img src="images/payment/closer.svg" alt="">
-              <br>
-              <img src="images/payment/stars.svg" alt="" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-                tellus purus, id pretium viverra rutrum. <br />
-                Et blandit nunc a pellentesque in cras facilisis sapien, dictum.
-                At vel egestas urna morbi tortor leo ut. <br />
-                In curabitur at pretium vulputate in. Porta bibendum feugiat
-                congue id rhoncus. Vel semper enim, eget.
-              </p>
-              <div class="container-hoodie-comment-bottom">
-                <p>25.000 Сум</p>
-                <h3>Size:</h3>
-                <p>28</p>
-                <img src="images/payment/one.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="container-hoodie">
-            <div class="container-hoodie-img">
-              <img src="images/payment/boy.svg" alt="" />
-            </div>
-            <div class="container-hoodie-comment">
-              <h2>Худи мужская белая с принтом.</h2>
-              <img src="images/payment/closer.svg" alt="">
-              <br>
-              <img src="images/payment/stars.svg" alt="" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-                tellus purus, id pretium viverra rutrum. <br />
-                Et blandit nunc a pellentesque in cras facilisis sapien, dictum.
-                At vel egestas urna morbi tortor leo ut. <br />
-                In curabitur at pretium vulputate in. Porta bibendum feugiat
-                congue id rhoncus. Vel semper enim, eget.
-              </p>
-              <div class="container-hoodie-comment-bottom">
-                <p>25.000 Сум</p>
-                <h3>Size:</h3>
-                <p>28</p>
-                <img src="images/payment/one.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-shop">
-          <div class="container-shop-logo">
-            <h1>Магазины</h1>
-          </div>
-          <div class="container-shop-img">
-            <img src="images/payment/trendyol.svg" alt="">
-            <img src="images/payment/boyner.svg" alt="">
-            <img src="images/payment/polo.svg" alt="">
-            <img src="images/payment/cardiy.svg" alt="">
-          </div>
-        </div>
-        <div class="container-categories">
-          <h1>Категории</h1>
-          <div class="container-categories-clothes">
-            <div class="container-categories-div">
-              <h3>Одежда</h3>
-            </div>
-            <img src="images/payment/zara.svg" alt="">
-            <img src="images/payment/mavi.svg" alt="">
-            <img src="images/payment/ipakyol.svg" alt="">
-            <img src="images/payment/network.svg" alt="">
-          </div>
-          <div class="container-categories-baby">
-            <div class="container-categories-div">
-              <h3>Детская одежда</h3>
-            </div>
-            <img src="images/payment/lc_waikiki.svg" alt="">
-            <img src="images/payment/koton.svg" alt="">
-            <img src="images/payment/civil.svg" alt="">
-            <img src="images/payment/defacto.svg" alt="">
-          </div>
-          <div class="container-categories-shoes">
-            <div class="container-categories-div">
-              <h3>Обувь</h3>
-            </div>
-            <img src="images/payment/flo.svg" alt="">
-            <img src="images/payment/dunya.svg" alt="">
-            <img src="images/payment/instreet.svg" alt="">
-            <img src="images/payment/marka.svg" alt="">
-          </div>
-          <div class="container-categories-textiles">
-            <div class="container-categories-div">
-              <h3>Домашний текстиль</h3>
-            </div>
-            <img src="images/payment/tac.svg" alt="">
-            <img src="images/payment/english.svg" alt="">
-            <img src="images/payment/cotton.svg" alt="">
-            <img src="images/payment/madame.svg" alt="">
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
     <footer>
       <div class="container">
