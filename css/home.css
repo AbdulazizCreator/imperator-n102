@@ -351,6 +351,11 @@ footer {
     margin-top: 400px;
   }
 }
+@media (max-width: 700px) {
+  .download-right h3 {
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 450px) {
   .download .download-left {
     top: -100px !important;
