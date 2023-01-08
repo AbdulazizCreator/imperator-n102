@@ -1,14 +1,39 @@
 @use "../global.scss";
 @use "../abstracts/variables";
 @use "../abstracts/mixin";
+$primariy-color: #ffc000;
+
+
 body {
   background-color: #fafafa;
 }
+
+
+.container-categories-div {
+  width: 216px;
+  height: 80px;
+  background-color: $primariy-color;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.15px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #0d0d0d;
+  }
+}
+
+
 .container {
-  max-width: 1146px;
-  margin: 0 auto;
   section {
     .container-top {
+      margin-top: 176px;
       h1 {
         font-style: normal;
         font-weight: 700;
@@ -24,13 +49,14 @@ body {
     .container-book {
       display: flex;
       justify-content: space-around;
+      margin-bottom: 64px;
       .payme {
         .book-left {
           display: flex;
           justify-content: space-between;
           width: 460px;
           height: 113px;
-          background-color: #ffc000;
+          background-color: $primariy-color;
           padding: 16px;
           p {
             font-style: normal;
@@ -72,10 +98,120 @@ body {
           font-feature-settings: "pnum" on, "lnum" on;
           color: #0d0d0d;
           width: 100%;
-          background-color: #ffc000;
+          background-color: $primariy-color;
           padding: 21px 0;
           text-align: center;
         }
+      }
+    }
+    .container-order {
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        margin-bottom: 32px;
+      }
+      .container-hoodie {
+        background-color: #ffffff;
+        display: flex;
+        margin-bottom: 24px;
+        &-img {
+          margin-bottom: -12px;
+        }
+        &-comment {
+          margin-left: 30px;
+          h2 {
+            padding: 25px 322px 43px 0;
+            display: inline-block;
+          }
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0.25px;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #000000;
+            padding: 8px 0 38px;
+          }
+          &-bottom {
+            margin-bottom: -20px;
+            p {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              letter-spacing: 0.44px;
+              font-feature-settings: "pnum" on, "lnum" on;
+              color: #0d0d0d;
+              display: inline-block;
+              padding-right: 40px;
+            }
+            h3 {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              font-feature-settings: "pnum" on, "lnum" on;
+              color: #000000;
+              display: inline-block;
+              padding-right: 13px;
+            }
+            img {
+              text-align: end;
+              padding: 0 0 0 300px;
+            }
+          }
+        }
+      }
+    }
+    .container-shop {
+      &-logo {
+        h1 {
+          padding: 40px 0 32px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 34px;
+          line-height: 140%;
+          text-align: center;
+          letter-spacing: 0.25px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #000000;
+        }
+      }
+      &-img {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .container-categories {
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        padding: 64px 0 32px;
+      }
+      &-clothes,
+      &-baby,
+      &-shoes,
+      &-textiles {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+      }
+      &-textiles {
+        margin-bottom: 54px;
       }
     }
   }
