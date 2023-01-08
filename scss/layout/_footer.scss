@@ -1,1 +1,97 @@
 // Jahongir
+
+footer {
+  padding: 46px 0 42px;
+  background-color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+  h4 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.25px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.25px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+  .footer-left {
+    display: flex;
+    gap: 29px;
+    @media (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+    }
+    .footer__left-logo {
+      display: grid;
+      grid-gap: 16px;
+      @media (max-width: 500px) {
+        justify-content: center;
+        text-align: center;
+        }
+      p {
+        max-width: 265px;
+      }
+    }
+    .footer__left-contact {
+      display: grid;
+      grid-row-gap: 38px;
+      @media (max-width: 700px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+       }
+       @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        }
+      .footer__top-links,
+      .footer__bottom-text {
+        display: grid;
+        grid-row-gap: 10px;
+      }
+    }
+  }
+  .footer-right {
+    display: flex;
+    gap: 173px;
+    @media (max-width: 800px) {
+      gap: 100px;
+      justify-content: center;
+    }
+    @media (max-width: 500px) {
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      text-align: center;
+      }
+    .footer__right-menus,
+    .footer__categories-menus {
+      display: grid;
+      grid-row-gap: 10px;
+    }
+  }
+}
