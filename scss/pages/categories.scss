@@ -1,12 +1,27 @@
 @use "../global.scss";
 
+body {
+  background-color: #fff;
+  a:hover {
+    color: blue;
+  }
+}
+header{
+  z-index: 10px;
+}
+.container__bottom {
+  box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12),
+    0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+
+}
+main {
+  margin-top: 174px;
+}
 .cotegories {
   display: flex;
   justify-content: center;
   margin-top: 64px;
   margin-bottom: 24px;
-  // border: 2px solid rgb(182, 182, 228);
-  // background-color: rgb(192, 192, 194);
   a {
     width: 198px;
     height: 48px;
@@ -19,11 +34,7 @@
     color: #000000;
   }
 }
-a:hover {
-    color: blue;
-  background-color: rgb(158, 158, 161);
-  transition: 1s;
-}
+
 .cotegories-cards {
   display: grid;
   grid-template-columns: auto auto auto auto;

@@ -8,11 +8,46 @@
       <title>Islomiddin</title>
       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
       <link rel="stylesheet" href="./css/category.css">
+      <link rel="stylesheet" href="./scss/layout/_header.scss">
 </head>
 
 <body>
       <header>
-
+            <nav id="navbar" class="navbar">
+                  <div class="navbar__top">
+                        <div class="container">
+                              <p>RU <span> UZB</span></p>
+                        </div>
+                  </div>
+                  <div class=" container__bottom" style="padding: 21px 30px">
+                        <div class="container">
+                              <div class="navbar__logo">
+                                    <a href="#"><img src="images/home/navbar-logo.svg" alt="logo-main" /></a>
+                              </div>
+                              <div class="navbar__menus" id="navbar-responsive">
+                                    <ul class="navbar__list">
+                                          <li><a class="link" href="#product">Главная</a></li>
+                                          <li><a class="link" href="#customer">O нас</a></li>
+                                          <li><a class="link" href="./categories.html">Категории</a></li>
+                                          <li><a class="link" href="#join">Сотрудничество</a></li>
+                                          <button class="toggle-btn close-btn" onclick="closeNavbar()">
+                                                <img src="images/header/close.svg" alt="menu" />
+                                          </button>
+                                    </ul>
+                                    <div class="navbar__join">
+                                          <a class="sign sign-in" href="#">Войти</a>
+                                          <a class="sign sign-up" href="#">Зарегистрироваться</a>
+                                          <button class="cart-btn">
+                                                <img src="images/home/navbar-cart.svg" alt="light-dark" />
+                                          </button>
+                                    </div>
+                              </div>
+                              <button class="toggle-btn" onclick="openNavbar()">
+                                    <img src="images/header/menu.svg" alt="menus" />
+                              </button>
+                        </div>
+                  </div>
+            </nav>
       </header>
       <main>
             <section>
@@ -66,7 +101,19 @@
                                           </div>
                                     </div>
                                     <div class="category-card">
-                                          <img src="./images/cotegories/image 23 (2).png" alt="">
+                                          <img src="./images/cotegories/image 23 (3).png" alt="">
+                                          <b>Lorem ipsum dolor sit amet</b>
+                                          <div class="narx">
+                                                <div class="img1">
+                                                      <img src="./images/cotegories/Group 24.svg" alt="">
+                                                </div>
+                                                <div class="img2">
+                                                      <img src="./images/cotegories/855 у.е..svg" alt="">
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="category-card">
+                                          <img src="./images/cotegories/image 23 (4).png" alt="">
                                           <b>Lorem ipsum dolor sit amet</b>
                                           <div class="narx">
                                                 <div class="img1">
@@ -90,7 +137,19 @@
                                           </div>
                                     </div>
                                     <div class="category-card">
-                                          <img src="./images/cotegories/image 23 (2).png" alt="">
+                                          <img src="./images/cotegories/image 23 (3).png" alt="">
+                                          <b>Lorem ipsum dolor sit amet</b>
+                                          <div class="narx">
+                                                <div class="img1">
+                                                      <img src="./images/cotegories/Group 24.svg" alt="">
+                                                </div>
+                                                <div class="img2">
+                                                      <img src="./images/cotegories/855 у.е..svg" alt="">
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="category-card">
+                                          <img src="./images/cotegories/image 23 (4).png" alt="">
                                           <b>Lorem ipsum dolor sit amet</b>
                                           <div class="narx">
                                                 <div class="img1">
@@ -114,7 +173,19 @@
                                           </div>
                                     </div>
                                     <div class="category-card">
-                                          <img src="./images/cotegories/image 23 (2).png" alt="">
+                                          <img src="./images/cotegories/image 23 (3).png" alt="">
+                                          <b>Lorem ipsum dolor sit amet</b>
+                                          <div class="narx">
+                                                <div class="img1">
+                                                      <img src="./images/cotegories/Group 24.svg" alt="">
+                                                </div>
+                                                <div class="img2">
+                                                      <img src="./images/cotegories/855 у.е..svg" alt="">
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="category-card">
+                                          <img src="./images/cotegories/image 23 (4).png" alt="">
                                           <b>Lorem ipsum dolor sit amet</b>
                                           <div class="narx">
                                                 <div class="img1">
@@ -138,7 +209,7 @@
                                           </div>
                                     </div>
                                     <div class="category-card">
-                                          <img src="./images/cotegories/image 23 (2).png" alt="">
+                                          <img src="./images/cotegories/image 23 (3).png" alt="">
                                           <b>Lorem ipsum dolor sit amet</b>
                                           <div class="narx">
                                                 <div class="img1">
@@ -150,43 +221,7 @@
                                           </div>
                                     </div>
                                     <div class="category-card">
-                                          <img src="./images/cotegories/image 23 (2).png" alt="">
-                                          <b>Lorem ipsum dolor sit amet</b>
-                                          <div class="narx">
-                                                <div class="img1">
-                                                      <img src="./images/cotegories/Group 24.svg" alt="">
-                                                </div>
-                                                <div class="img2">
-                                                      <img src="./images/cotegories/855 у.е..svg" alt="">
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="category-card">
-                                          <img src="./images/cotegories/image 23 (2).png" alt="">
-                                          <b>Lorem ipsum dolor sit amet</b>
-                                          <div class="narx">
-                                                <div class="img1">
-                                                      <img src="./images/cotegories/Group 24.svg" alt="">
-                                                </div>
-                                                <div class="img2">
-                                                      <img src="./images/cotegories/855 у.е..svg" alt="">
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="category-card">
-                                          <img src="./images/cotegories/image 23 (2).png" alt="">
-                                          <b>Lorem ipsum dolor sit amet</b>
-                                          <div class="narx">
-                                                <div class="img1">
-                                                      <img src="./images/cotegories/Group 24.svg" alt="">
-                                                </div>
-                                                <div class="img2">
-                                                      <img src="./images/cotegories/855 у.е..svg" alt="">
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="category-card">
-                                          <img src="./images/cotegories/image 23 (2).png" alt="">
+                                          <img src="./images/cotegories/image 23 (4).png" alt="">
                                           <b>Lorem ipsum dolor sit amet</b>
                                           <div class="narx">
                                                 <div class="img1">
@@ -199,6 +234,7 @@
                                     </div>
                               </div>
                         </div>
+                  </div>
             </section>
       </main>
       <footer>
@@ -257,6 +293,7 @@
                   </div>
             </div>
       </footer>
+      <script src="js/main.js"></script>
 </body>
 
 </html>

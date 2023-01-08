@@ -1,5 +1,22 @@
 @use "../global.scss";
 
+body {
+  background-color: #fff;
+
+  a:hover {
+    color: blue;
+  }
+}
+
+.container__bottom {
+  box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12),
+    0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+  z-index: 10;
+}
+
+main {
+  margin-top: 164px;
+}
 .category {
   margin-top: 40px;
   margin-bottom: 32px;
@@ -116,6 +133,9 @@
       font-feature-settings: "pnum" on, "lnum" on;
       color: #000000;
     }
+    a:hover {
+      color: blue;
+    }
     i {
       padding-top: 5px;
       color: #000000;
@@ -142,6 +162,9 @@
       letter-spacing: 0.15px;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #000000;
+    }
+    a:hover {
+      color: blue;
     }
     i {
       padding-top: 5px;
@@ -170,6 +193,9 @@
       font-feature-settings: "pnum" on, "lnum" on;
       color: #000000;
     }
+    a:hover {
+      color: blue;
+    }
     i {
       padding-top: 5px;
       color: #000000;
@@ -194,5 +220,9 @@
       font-weight: 100000px;
       color: #0d0d0d;
     }
+  }
+  button:hover {
+    background-color: red;
+    color: blue;
   }
 }
