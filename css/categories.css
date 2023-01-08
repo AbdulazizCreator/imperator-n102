@@ -129,3 +129,67 @@ footer {
   padding: 0 30px;
   margin: 0 auto;
 }
+
+.cotegories {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+.cotegories a {
+  width: 198px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+a:hover {
+  color: blue;
+  background-color: rgb(158, 158, 161);
+  transition: 1s;
+}
+
+.cotegories-cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.cotegories-card {
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-rows: repeat(2, fr);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.cotegories-card img {
+  width: 264px;
+  height: 272px;
+}
+.cotegories-card p {
+  padding-top: 26px;
+  padding-left: 35px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+@media (max-width: 1140px) {
+  .cotegories-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
