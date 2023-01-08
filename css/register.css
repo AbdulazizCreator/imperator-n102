@@ -74,7 +74,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  flex-grow: 1;
 }
 .navbar__list {
   display: flex;
@@ -82,9 +81,9 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 16px;
+  margin-right: 197px;
 }
-.navbar__list a {
+.navbar__list .link {
   font: normal 500 14px/19.6px "Montserrat";
   color: #000;
   margin: 0 12px;
@@ -97,7 +96,14 @@ ul {
   flex-wrap: wrap;
   gap: 15px;
 }
-.navbar__join button {
+.navbar__side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar__side .cart-btn {
   margin-left: 28px;
 }
 .navbar .toggle-btn {
@@ -108,13 +114,13 @@ ul {
   border: none;
 }
 .navbar .sign {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   padding: 5px 10px;
   letter-spacing: 0.44px;
-  font-feature-settings: "pnum" on, "lnum" on;
   color: #0d0d0d;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -132,6 +138,12 @@ ul {
 }
 
 @media (max-width: 1170px) {
+  .navbar__logo {
+    display: none;
+  }
+  .navbar .container__bottom {
+    background-color: #fff;
+  }
   .navbar__menus {
     position: fixed;
     display: flex;
@@ -141,7 +153,7 @@ ul {
     flex-wrap: wrap;
     flex-wrap: nowrap;
     top: 0;
-    right: -1500px;
+    left: -1500px;
     bottom: 0;
     width: 100%;
     transition: 0.3s;
@@ -161,6 +173,16 @@ ul {
     font-size: 1.875rem;
     line-height: 55px;
     color: #fff;
+  }
+  .navbar__side {
+    position: relative;
+    width: 100%;
+  }
+  .navbar__side .toggle-btn:after {
+    content: url("../../images/home/Logo.svg");
+    position: absolute;
+    top: -6px;
+    left: 40px;
   }
   .navbar .sign:hover {
     background-color: #000;
@@ -296,4 +318,51 @@ footer {
 .footer .footer-right .footer__categories-menus {
   display: grid;
   grid-row-gap: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regester {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+.regester-lift {
+  padding-top: 70px;
+}
+
+.partnership-right {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.partnership-right input {
+  padding: 20px 20px;
+  font-family: cursive;
+  font-size: 20px;
+  width: 100%;
+}
+.partnership-right a {
+  padding: 10px 60px;
+  border: 1px solid black;
+  background-color: #FFC000;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .regester {
+    grid-template-columns: auto;
+    gap: 50px;
+    padding-top: 0px;
+  }
+  .partnership-right {
+    padding: 0;
+    width: 100%;
+  }
 }

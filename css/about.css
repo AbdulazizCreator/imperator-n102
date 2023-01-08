@@ -74,7 +74,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  flex-grow: 1;
 }
 .navbar__list {
   display: flex;
@@ -82,9 +81,9 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 16px;
+  margin-right: 197px;
 }
-.navbar__list a {
+.navbar__list .link {
   font: normal 500 14px/19.6px "Montserrat";
   color: #000;
   margin: 0 12px;
@@ -97,7 +96,14 @@ ul {
   flex-wrap: wrap;
   gap: 15px;
 }
-.navbar__join button {
+.navbar__side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar__side .cart-btn {
   margin-left: 28px;
 }
 .navbar .toggle-btn {
@@ -108,13 +114,13 @@ ul {
   border: none;
 }
 .navbar .sign {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   padding: 5px 10px;
   letter-spacing: 0.44px;
-  font-feature-settings: "pnum" on, "lnum" on;
   color: #0d0d0d;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -132,6 +138,12 @@ ul {
 }
 
 @media (max-width: 1170px) {
+  .navbar__logo {
+    display: none;
+  }
+  .navbar .container__bottom {
+    background-color: #fff;
+  }
   .navbar__menus {
     position: fixed;
     display: flex;
@@ -141,7 +153,7 @@ ul {
     flex-wrap: wrap;
     flex-wrap: nowrap;
     top: 0;
-    right: -1500px;
+    left: -1500px;
     bottom: 0;
     width: 100%;
     transition: 0.3s;
@@ -161,6 +173,16 @@ ul {
     font-size: 1.875rem;
     line-height: 55px;
     color: #fff;
+  }
+  .navbar__side {
+    position: relative;
+    width: 100%;
+  }
+  .navbar__side .toggle-btn:after {
+    content: url("../../images/home/Logo.svg");
+    position: absolute;
+    top: -6px;
+    left: 40px;
   }
   .navbar .sign:hover {
     background-color: #000;
@@ -296,4 +318,289 @@ footer {
 .footer .footer-right .footer__categories-menus {
   display: grid;
   grid-row-gap: 10px;
+}
+
+.our-advantage__heading-5 {
+  padding-bottom: 24px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+
+.our-advantage__title {
+  background: #fff;
+  margin-bottom: 64px;
+}
+
+.our-advantage__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-advantage__cards .our-advantage__card {
+  text-align: center;
+}
+.our-advantage__cards .our-advantage__card img {
+  padding: 40px 0 45px 0;
+}
+.our-advantage__cards .our-advantage__card p {
+  padding-bottom: 29px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  color: #000000;
+}
+
+@media (max-width: 700px) {
+  .our-advantage__heading-5 {
+    text-align: left;
+  }
+  .our-advantage__title {
+    background: #E5E5E5;
+  }
+  .our-advantage__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-advantage__card {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+    border-radius: 9px;
+  }
+  p {
+    margin-top: -40px;
+  }
+}
+#download {
+  margin: 243px 0 64px;
+  height: 100%;
+  background: radial-gradient(100% 1071.07% at 0% 0%, #0f0d2b 0%, #0c0926 100%);
+}
+#download .download {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+#download .download-left {
+  position: absolute;
+  left: 0;
+  top: -175px;
+}
+#download .download-left img {
+  width: 350px;
+  height: 550px;
+}
+#download .download-right {
+  height: 100%;
+  margin-left: 435px;
+  padding: 30px 0 56px;
+}
+#download .download-right h3 {
+  max-width: 754px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+#download .download-right p {
+  max-width: 738px;
+  padding: 24px 0 40px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+#download .download-right .download__right-downloadapp {
+  display: flex;
+  gap: 31px;
+}
+
+@media (max-width: 860px) {
+  .download .download-right {
+    margin-left: 0 !important;
+    margin-top: 400px;
+  }
+}
+@media (max-width: 700px) {
+  .download-right h3 {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .download .download-left {
+    top: -100px !important;
+  }
+  .download .download-left img {
+    width: 300px !important;
+    height: 400px !important;
+  }
+  .download .download-right {
+    margin-left: 0 !important;
+    margin-top: 300px;
+  }
+  .download .download-right h3 {
+    font-size: 25px !important;
+  }
+  .download .download-right p {
+    font-size: 12px;
+  }
+  .download .download-right img {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .download .download-left {
+    top: -80px !important;
+  }
+  .download .download-left img {
+    width: 200px !important;
+    height: 300px !important;
+  }
+  .download .download-right {
+    margin-left: 0 !important;
+    margin-top: 250px;
+  }
+}
+#about-us {
+  padding-top: 164px;
+}
+
+.about-us__heading-2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.about-us__home {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 63px;
+}
+.about-us__home .about-us__home-left h2 {
+  max-width: 557px;
+  padding-top: 62px;
+  padding-bottom: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+}
+.about-us__home .about-us__home-left p {
+  max-width: 557px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+.about-us__home .about-us__home-right img {
+  width: 100%;
+}
+
+.work-world {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 63px;
+}
+
+.work-world__heading-6 h6 {
+  padding-bottom: 65px;
+  max-width: 460px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: #000000;
+}
+
+.work-world__titles {
+  display: flex;
+  justify-content: space-between;
+}
+.work-world__titles .work-world__title {
+  padding-bottom: 36px;
+}
+.work-world__titles .work-world__title h5 {
+  padding-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+.work-world__titles .work-world__title p {
+  width: 166px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+@media (max-width: 1150px) {
+  .work-world {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .geogle-card {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .about-us__home {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us__home-left h2 {
+    width: 100%;
+    margin-top: -50px;
+  }
+  .about-us__home-left p {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .about-us__home-left h2 {
+    padding-bottom: 50px !important;
+  }
+  .work-world__title h5 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 630px) {
+  .geogle-card iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 425px) {
+  .about-us__heading-2 {
+    text-align: left;
+  }
+  .geogle-card iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .work-world__heading-6 h6 {
+    font-size: 30px;
+  }
+  .work-world__titles {
+    display: flex;
+    flex-direction: column;
+  }
 }
