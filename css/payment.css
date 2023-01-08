@@ -302,9 +302,28 @@ body {
   background-color: #fafafa;
 }
 
-.container {
-  max-width: 1146px;
-  margin: 0 auto;
+.container-categories-div {
+  width: 216px;
+  height: 80px;
+  background-color: #ffc000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-categories-div h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.15px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0d0d0d;
+}
+
+.container section .container-top {
+  padding-top: 176px;
 }
 .container section .container-top h1 {
   font-style: normal;
@@ -320,6 +339,7 @@ body {
 .container section .container-book {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 64px;
 }
 .container section .container-book .payme .book-left {
   display: flex;
@@ -369,4 +389,104 @@ body {
   background-color: #ffc000;
   padding: 21px 0;
   text-align: center;
+}
+.container section .container-order h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.container section .container-order .container-hoodie {
+  background-color: #ffffff;
+  display: flex;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+.container section .container-order .container-hoodie-img {
+  margin-bottom: -12px;
+}
+.container section .container-order .container-hoodie-comment {
+  margin-left: 30px;
+}
+.container section .container-order .container-hoodie-comment h2 {
+  padding: 25px 408px 43px 0;
+  display: inline-block;
+}
+.container section .container-order .container-hoodie-comment p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  padding: 8px 0 38px;
+}
+.container section .container-order .container-hoodie-comment-bottom {
+  margin-bottom: -20px;
+}
+.container section .container-order .container-hoodie-comment-bottom p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0d0d0d;
+  display: inline-block;
+  padding-right: 40px;
+}
+.container section .container-order .container-hoodie-comment-bottom h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  display: inline-block;
+  padding-right: 13px;
+}
+.container section .container-order .container-hoodie-comment-bottom img {
+  text-align: end;
+  padding: 0 0 0 387px;
+}
+.container section .container-shop-logo h1 {
+  padding: 40px 0 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.container section .container-shop-img {
+  display: flex;
+  justify-content: space-between;
+}
+.container section .container-categories h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  padding: 64px 0 32px;
+}
+.container section .container-categories-clothes, .container section .container-categories-baby, .container section .container-categories-shoes, .container section .container-categories-textiles {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+.container section .container-categories-textiles {
+  margin-bottom: 54px;
 }
