@@ -1,1 +1,61 @@
 // Bekzod
+
+.our-advantage__heading-5 {
+    padding-bottom: 24px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+    color: #000000;
+}
+
+.our-advantage__title{
+    background: #fff;
+    margin-bottom: 64px;
+}
+
+.our-advantage__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .our-advantage__card {
+      text-align: center;
+      img {
+        padding: 40px 0 45px 0;
+      }
+      p {
+        padding-bottom: 29px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+        color: #000000;
+      }
+    }
+}
+
+@media (max-width: 700px) {
+    .our-advantage__heading-5 {
+        text-align: left;
+    }
+    .our-advantage__title {
+        background: #E5E5E5;
+    }
+    .our-advantage__cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .our-advantage__card {
+        width: 100%;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+        border-radius: 9px;
+    }
+    p {
+        margin-top: -40px;
+    }
+}

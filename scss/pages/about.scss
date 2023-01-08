@@ -1,2 +1,163 @@
 @use "../global.scss";
 @use "../components/advantage-card";
+
+@use "../global.scss";
+@use "../components/advantage-card";
+@use "../components/download-app";
+
+#about-us {
+    padding-top: 164px;
+}
+
+.about-us__heading-2 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.about-us__home {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 63px;
+    .about-us__home-left {
+        h2 {
+            max-width: 557px;
+            padding-top: 62px;
+            padding-bottom: 24px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 140%;
+            color: #000000;
+        }
+        p {
+            max-width: 557px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 170%;
+            letter-spacing: 0.25px;
+            color: #000000;
+        }
+    }
+    .about-us__home-right {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Work world
+.work-world {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 63px;
+}
+
+.work-world__heading-6 {
+    h6 {
+        padding-bottom: 65px;
+        max-width: 460px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        color: #000000;
+    }
+}
+
+.work-world__titles {
+    display: flex;
+    justify-content: space-between;
+    .work-world__title {
+        padding-bottom: 36px;
+        h5 {
+            padding-bottom: 8px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 32px;
+            color: #000000;
+        }
+        p {
+            width: 166px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #000000;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .work-world {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .geogle-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-us__home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-us__home-left {
+        h2 {
+            width: 100%;
+            margin-top: -50px;
+        }
+        p {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .about-us__home-left {
+        h2 {
+            padding-bottom: 50px !important;
+        }
+    }
+    .work-world__title {
+        h5 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .geogle-card {
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .about-us__heading-2 {
+        text-align: left;
+    }
+    .geogle-card {
+        iframe {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .work-world__heading-6 {
+        h6 {
+            font-size: 30px;
+        }
+    }
+    .work-world__titles {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
