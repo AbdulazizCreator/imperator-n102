@@ -220,9 +220,25 @@ main {
       font-weight: 100000px;
       color: #0d0d0d;
     }
+    p:hover {
+      color: black;
+    }
   }
   button:hover {
-    background-color: red;
-    color: blue;
+    background-color: rgb(178, 175, 175);
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 1140px) {
+  .category-cards-rigth {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  .category {
+    display: none;
+  }
+  .category-cards-left {
+    display: none;
   }
 }
