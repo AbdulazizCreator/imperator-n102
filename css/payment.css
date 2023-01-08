@@ -323,7 +323,7 @@ body {
 }
 
 .container section .container-top {
-  margin-top: 176px;
+  padding-top: 176px;
 }
 .container section .container-top h1 {
   font-style: normal;
@@ -405,6 +405,7 @@ body {
   background-color: #ffffff;
   display: flex;
   margin-bottom: 24px;
+  border-radius: 12px;
 }
 .container section .container-order .container-hoodie-img {
   margin-bottom: -12px;
@@ -413,7 +414,7 @@ body {
   margin-left: 30px;
 }
 .container section .container-order .container-hoodie-comment h2 {
-  padding: 25px 322px 43px 0;
+  padding: 25px 408px 43px 0;
   display: inline-block;
 }
 .container section .container-order .container-hoodie-comment p {
@@ -453,7 +454,7 @@ body {
 }
 .container section .container-order .container-hoodie-comment-bottom img {
   text-align: end;
-  padding: 0 0 0 300px;
+  padding: 0 0 0 387px;
 }
 .container section .container-shop-logo h1 {
   padding: 40px 0 32px;

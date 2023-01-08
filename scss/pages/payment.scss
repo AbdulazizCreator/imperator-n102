@@ -33,7 +33,7 @@ body {
 .container {
   section {
     .container-top {
-      margin-top: 176px;
+      padding-top: 176px;
       h1 {
         font-style: normal;
         font-weight: 700;
@@ -120,13 +120,14 @@ body {
         background-color: #ffffff;
         display: flex;
         margin-bottom: 24px;
+        border-radius: 12px;
         &-img {
           margin-bottom: -12px;
         }
         &-comment {
           margin-left: 30px;
           h2 {
-            padding: 25px 322px 43px 0;
+            padding: 25px 408px 43px 0;
             display: inline-block;
           }
           p {
@@ -165,7 +166,7 @@ body {
             }
             img {
               text-align: end;
-              padding: 0 0 0 300px;
+              padding: 0 0 0 387px;
             }
           }
         }
