@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -76,7 +77,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  flex-grow: 1;
 }
 .navbar__list {
   display: flex;
@@ -84,9 +84,9 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 16px;
+  margin-right: 197px;
 }
-.navbar__list a {
+.navbar__list .link {
   font: normal 500 14px/19.6px "Montserrat";
   color: #000;
   margin: 0 12px;
@@ -99,7 +99,14 @@ ul {
   flex-wrap: wrap;
   gap: 15px;
 }
-.navbar__join button {
+.navbar__side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar__side .cart-btn {
   margin-left: 28px;
 }
 .navbar .toggle-btn {
@@ -110,13 +117,13 @@ ul {
   border: none;
 }
 .navbar .sign {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   padding: 5px 10px;
   letter-spacing: 0.44px;
-  font-feature-settings: "pnum" on, "lnum" on;
   color: #0d0d0d;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -134,6 +141,12 @@ ul {
 }
 
 @media (max-width: 1170px) {
+  .navbar__logo {
+    display: none;
+  }
+  .navbar .container__bottom {
+    background-color: #fff;
+  }
   .navbar__menus {
     position: fixed;
     display: flex;
@@ -143,7 +156,7 @@ ul {
     flex-wrap: wrap;
     flex-wrap: nowrap;
     top: 0;
-    right: -1500px;
+    left: -1500px;
     bottom: 0;
     width: 100%;
     transition: 0.3s;
@@ -163,6 +176,16 @@ ul {
     font-size: 1.875rem;
     line-height: 55px;
     color: #fff;
+  }
+  .navbar__side {
+    position: relative;
+    width: 100%;
+  }
+  .navbar__side .toggle-btn:after {
+    content: url("../../images/home/Logo.svg");
+    position: absolute;
+    top: -6px;
+    left: 40px;
   }
   .navbar .sign:hover {
     background-color: #000;
@@ -546,6 +569,9 @@ footer {
 }
 .products .products-chart .products-cards {
   text-align: center;
+  background-color: #fff;
+  border-radius: 26px;
+  padding-bottom: 20px;
 }
 .products .products-chart .products-cards img {
   width: 100%;
@@ -592,6 +618,7 @@ footer {
   text-transform: uppercase;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
+  margin-bottom: 0;
 }
 .products .products-chart a {
   font-family: "Montserrat";
@@ -636,4 +663,42 @@ footer {
   letter-spacing: 0.02em;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
+}
+
+@media (max-width: 786px) {
+  .cart-lorem {
+    display: block;
+  }
+  .right-send {
+    width: 300px !important;
+    padding: 10px 50px !important;
+  }
+  .right-next {
+    width: 300px !important;
+    padding: 10px 50px !important;
+  }
+  .card-bottom img {
+    width: 70px;
+    height: 70px;
+  }
+  .products-chart {
+    display: block !important;
+  }
+  .products-cards {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .products-star {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .sort {
+    display: block !important;
+  }
+  .sort .sort-img {
+    margin-bottom: 50px;
+  }
+  .sort .sort-img img {
+    margin-bottom: 10px;
+  }
 }

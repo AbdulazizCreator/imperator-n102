@@ -1,12 +1,15 @@
 @use "../global.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
 .cart-lorem {
   padding-top: 136px;
   display: flex;
   gap: 130px;
   .lorem-left {
     flex: 0.4;
+
   }
   .lorem-right {
     flex: 0.6;
@@ -243,6 +246,9 @@
     gap: 30px;
     .products-cards {
       text-align: center;
+      background-color: #fff;
+      border-radius: 26px;
+      padding-bottom: 20px;
       img {
         width: 100%;
       }
@@ -288,6 +294,7 @@
         text-transform: uppercase;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #000000;
+        margin-bottom: 0;
       }
     }
     a {
@@ -334,6 +341,45 @@
       letter-spacing: 0.02em;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #000000;
+    }
+  }
+}
+@media (max-width: 786px) {
+  .cart-lorem {
+    display: block;
+  }
+  .right-send{
+    width: 300px !important;
+    padding: 10px 50px !important;
+  }
+  .right-next{
+      width: 300px !important;
+      padding: 10px 50px !important;
+  }
+  .card-bottom{
+    img{
+        width: 70px;
+        height: 70px;
+    }
+  }
+  .products-chart {
+    display: block !important;
+  }
+  .products-cards{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .products-star{
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .sort{
+    display: block !important;
+    .sort-img{
+        margin-bottom: 50px;
+        img{
+            margin-bottom: 10px;
+        }
     }
   }
 }
