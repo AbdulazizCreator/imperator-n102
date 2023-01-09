@@ -114,6 +114,10 @@ ul {
   font: normal 500 14px/19.6px "Montserrat";
   color: #000;
   margin: 0 12px;
+  transition: 0.3s;
+}
+.navbar__list .link:hover {
+  color: #FFC000;
 }
 .navbar__join {
   display: flex;

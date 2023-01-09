@@ -47,6 +47,10 @@
       font: var.$body-font;
       color: #000;
       margin: 0 12px;
+      transition: 0.3s;
+    }
+    .link:hover{
+      color:var.$primary-color;
     }
   }
   &__join {
