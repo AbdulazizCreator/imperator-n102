@@ -1,2 +1,140 @@
 @use "../global.scss";
 @use "../components/category-card";
+@use "../components/product-card";
+
+.product-whiteman {
+  #change {
+    margin-top: 20px;
+  }
+  .product-hat {
+    margin-top: 150px;
+    display: flex;
+    gap: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    .right {
+      width: 800px;
+      .right-top {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 60px;
+        padding: 10px;
+        h4 {
+          font-family: "Montserrat";
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 140%;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #040921;
+        }
+      }
+      p {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        padding: 10px;
+      }
+      .size {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+      }
+      .add {
+        display: flex;
+        gap: 40px;
+        p {
+          font-family: "Montserrat";
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          letter-spacing: 0.44px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #0d0d0d;
+        }
+      }
+      .pilus-minus {
+        display: flex;
+        padding-right: 50px;
+        .minus {
+          padding: 10px 20px 10px 20px;
+          background: #ffc000;
+          color: white;
+        }
+        p {
+          background: #f2f2f2;
+          font-family: "Montserrat";
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #000000;
+          padding: 5px 42px 5px 43px;
+        }
+        .pilus {
+          padding: 10px 20px 10px 20px;
+          background: #ffc000;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#price {
+  .price {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .total-price {
+      display: flex;
+      gap: 16px;
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+      }
+    }
+    .design {
+      a {
+        padding: 18px 111px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        background: #FFC000;
+      }
+    }
+  }
+}
+
+.product {
+  .margin-bottom {
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 786px) {
+  .product-whiteman {
+    // display: block;
+  }
+}
