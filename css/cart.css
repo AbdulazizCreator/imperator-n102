@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,34 +12,10 @@ body {
 
 a {
   text-decoration: none;
-  cursor: pointer;
-}
-
-button {
-  cursor: pointer;
 }
 
 ul {
   list-style-type: none;
-}
-
-#backtop {
-  border: none;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 99;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: rgb(0, 0, 0);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-#backtop img {
-  width: 30px;
-  height: 30px;
 }
 
 .container {
@@ -101,6 +74,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 .navbar__list {
   display: flex;
@@ -108,16 +82,12 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 197px;
+  margin-right: 16px;
 }
-.navbar__list .link {
+.navbar__list a {
   font: normal 500 14px/19.6px "Montserrat";
   color: #000;
   margin: 0 12px;
-  transition: 0.3s;
-}
-.navbar__list .link:hover {
-  color: #FFC000;
 }
 .navbar__join {
   display: flex;
@@ -127,16 +97,8 @@ ul {
   flex-wrap: wrap;
   gap: 15px;
 }
-.navbar__side {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.navbar__side .cart-btn {
+.navbar__join button {
   margin-left: 28px;
-  cursor: pointer;
 }
 .navbar .toggle-btn {
   display: none;
@@ -146,13 +108,13 @@ ul {
   border: none;
 }
 .navbar .sign {
-  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   padding: 5px 10px;
   letter-spacing: 0.44px;
+  font-feature-settings: "pnum" on, "lnum" on;
   color: #0d0d0d;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -169,13 +131,7 @@ ul {
   padding: 14px 30px !important;
 }
 
-@media (max-width: 1220px) {
-  .navbar__logo {
-    display: none;
-  }
-  .navbar .container__bottom {
-    background-color: #fff;
-  }
+@media (max-width: 1170px) {
   .navbar__menus {
     position: fixed;
     display: flex;
@@ -185,10 +141,10 @@ ul {
     flex-wrap: wrap;
     flex-wrap: nowrap;
     top: 0;
-    left: -1500px;
+    right: -1500px;
     bottom: 0;
     width: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
     z-index: 999;
     background-color: #FFC000;
     flex-grow: 0;
@@ -205,16 +161,6 @@ ul {
     font-size: 1.875rem;
     line-height: 55px;
     color: #fff;
-  }
-  .navbar__side {
-    position: relative;
-    width: 100%;
-  }
-  .navbar__side .toggle-btn:after {
-    content: url("../../images/home/Logo.svg");
-    position: absolute;
-    top: -6px;
-    left: 40px;
   }
   .navbar .sign:hover {
     background-color: #000;
@@ -298,6 +244,59 @@ footer {
   grid-gap: 16px;
 }
 @media (max-width: 500px) {
+  .footer .footer-left .footer__left-logo {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.footer .footer-left .footer__left-logo p {
+  max-width: 265px;
+}
+.footer .footer-left .footer__left-contact {
+  display: grid;
+  grid-row-gap: 38px;
+}
+@media (max-width: 700px) {
+  .footer .footer-left .footer__left-contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .footer-left .footer__left-contact {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.footer .footer-left .footer__left-contact .footer__top-links,
+.footer .footer-left .footer__left-contact .footer__bottom-text {
+  display: grid;
+  grid-row-gap: 10px;
+}
+.footer .footer-right {
+  display: flex;
+  gap: 173px;
+}
+@media (max-width: 800px) {
+  .footer .footer-right {
+    gap: 100px;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .footer .footer-right {
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.footer .footer-right .footer__right-menus,
+.footer .footer-right .footer__categories-menus {
+  display: grid;
+  grid-row-gap: 10px;
+}) {
   .footer .footer-left .footer__left-logo {
     justify-content: center;
     text-align: center;
