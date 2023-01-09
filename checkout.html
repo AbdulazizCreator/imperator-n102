@@ -23,10 +23,12 @@
           </div>
           <div class="navbar__menus" id="navbar-responsive">
             <ul class="navbar__list">
-              <li><a class="link" href="#product">Главная</a></li>
-              <li><a class="link" href="#customer">O нас</a></li>
-              <li><a class="link" href="#price">Категории</a></li>
-              <li><a class="link" href="#join">Сотрудничество</a></li>
+              <li><a class="link" href="index.html">Главная</a></li>
+              <li><a class="link" href="about.html">O нас</a></li>
+              <li><a class="link" href="categories.html">Категории</a></li>
+              <li>
+                <a class="link" href="partnership.html">Сотрудничество</a>
+              </li>
               <button class="toggle-btn close-btn" onclick="closeNavbar()">
                 <img src="images/header/close.svg" alt="menu" />
               </button>
@@ -34,14 +36,16 @@
             <div class="navbar__join">
               <a class="sign sign-in" href="#">Войти</a>
               <a class="sign sign-up" href="#">Зарегистрироваться</a>
-              <button class="cart-btn">
-                <img src="images/home/navbar-cart.svg" alt="light-dark" />
-              </button>
             </div>
           </div>
-          <button class="toggle-btn" onclick="openNavbar()">
-            <img src="images/header/menu.svg" alt="menus" />
-          </button>
+          <div class="navbar__side">
+            <button class="toggle-btn" onclick="openNavbar()">
+              <img src="images/header/menu.svg" alt="menus" />
+            </button>
+            <button class="cart-btn">
+              <img src="images/home/navbar-cart.svg" alt="light-dark" />
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -63,18 +67,22 @@
               </div>
             </div>
             <div class="container-img">
-              <img
-                src="images/payment/click.svg"
-                style="padding-right: 44px"
-                alt=""
-              />
-              <img src="images/payment/Group 193.svg" alt="" />
+              <img src="images/payment/click.svg" alt="" />
+              <img src="images/payment/nmnhu.svg" alt="" />
             </div>
           </div>
           <div class="input-payment">
             <input type="text" placeholder="Адресс доставки" />
             <input type="text" placeholder="Имя" />
             <input type="tel" placeholder="Номер телефона" />
+            <div class="input-payment-img">
+              <img src="images/payment/click.svg" alt="" />
+              <img src="images/payment/nmnhu.svg" alt="" />
+              <div class="container-img-uzcard">
+                <img src="images/payment/uzcard.svg" alt="">
+                <img src="images/payment/naliche.svg" alt="">
+              </div>
+            </div>
             <a href="payment.html">Перейти к оплате</a>
           </div>
         </div>
@@ -99,9 +107,10 @@
               </p>
               <div class="container-hoodie-comment-bottom">
                 <p>25.000 Сум</p>
-                <h3>Size:</h3>
-                <p>28</p>
-                <img src="images/payment/one.png" alt="" />
+                <p>Size:</p>
+                <h3>28</h3>
+                <img style="display: none;" src="images/payment/musirka.svg" alt="">
+                <img class="container-hoodie-comment-bottom-img" src="images/payment/one.png" alt="" />
               </div>
             </div>
           </div>
@@ -124,8 +133,9 @@
               </p>
               <div class="container-hoodie-comment-bottom">
                 <p>25.000 Сум</p>
-                <h3>Size:</h3>
-                <p>28</p>
+                <p>Size:</p>
+                <h3>28</h3>
+                <img style="display: none;" src="images/payment/musirka.svg" alt="">
                 <img src="images/payment/one.png" alt="" />
               </div>
             </div>
