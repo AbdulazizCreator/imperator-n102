@@ -7,19 +7,22 @@
     margin-top: 20px;
   }
   .product-hat {
+    width: 100%;
     margin-top: 150px;
     display: flex;
-    gap: 30px;
     background: #ffffff;
     border-radius: 12px;
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }   
+    }
+    
     .right {
-      width: 800px;
+      padding: 25px 25px 27px 30px;
       .right-top {
         display: flex;
         justify-content: space-between;
-        margin-top: 15px;
         margin-bottom: 60px;
-        padding: 10px;
         h4 {
           font-family: "Montserrat";
           font-weight: 700;
@@ -37,13 +40,17 @@
         letter-spacing: 0.25px;
         font-feature-settings: "pnum" on, "lnum" on;
         color: #000000;
-        padding: 10px;
+        padding: 10px 0;
       }
       .size {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 20px;
+        @media (max-width: 800px) {
+          flex-direction: column;
+          gap: 20px;
+        }
       }
       .add {
         display: flex;
@@ -60,7 +67,6 @@
       }
       .pilus-minus {
         display: flex;
-        padding-right: 50px;
         .minus {
           padding: 10px 20px 10px 20px;
           background: #ffc000;
@@ -85,7 +91,6 @@
       }
     }
   }
-}
 
 #price {
   .price {
@@ -93,6 +98,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      gap: 50px;
+    }   
     .total-price {
       display: flex;
       gap: 16px;
@@ -114,7 +123,7 @@
       }
     }
     .design {
-      a {
+      button {
         padding: 18px 111px;
         font-weight: 400;
         font-size: 16px;
@@ -123,6 +132,7 @@
         font-feature-settings: "pnum" on, "lnum" on;
         color: #000000;
         background: #FFC000;
+        border: none;
       }
     }
   }
