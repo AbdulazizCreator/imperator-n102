@@ -5,54 +5,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/home.min.css" />
+    <!-- <link rel="stylesheet" href="css/about.css"> -->
     <title>Safarmurod & Jahongir</title>
   </head>
-  <header>
-    <nav id="navbar" class="navbar">
-        <div class="navbar__top">
-            <div class="container">
-                <p>RU <span> UZB</span></p>
-            </div>
-        </div>
-      <div class="container container__bottom" style="padding: 21px 30px">
-        <div class="navbar__logo">
-          <a href="#"
-            ><img src="images/home/navbar-logo.svg" alt="logo-main"
-          /></a>
-        </div>
-        <div class="navbar__menus" id="navbar-responsive">
-          <ul class="navbar__list">
-            <li><a class="link" href="index.html">Главная</a></li>
-            <li><a class="link" href="about.html">O нас</a></li>
-            <li><a class="link" href="categories.html">Категории</a></li>
-            <li><a class="link" href="partnership.html">Сотрудничество</a></li>
-            <button class="toggle-btn close-btn" onclick="closeNavbar()">
-              <img src="images/header/close.svg" alt="menu" />
-            </button>
-          </ul>
-          <div class="navbar__join">
-            <a class="sign sign-in" href="#">Войти</a>
-            <a class="sign sign-up" href="#">Зарегистрироваться</a>
-          </div>
-        </div>
-        <div class="navbar__side">
-          <button class="toggle-btn" onclick="openNavbar()">
-            <img src="images/header/menu.svg" alt="menus" />
-          </button>
-          <button class="cart-btn">
-            <img src="images/home/navbar-cart.svg" alt="light-dark" />
-          </button>
+  <body>
+    <button id="backtop">
+      <a href="#"><img src="images/home/backtop.svg" alt="backtop" /></a>
+    </button>
+    <header>
+      <nav id="navbar" class="navbar" w3-include-html="nav.html"></nav>
+    </header>
+    <!--SAFARMUROD-->
+    <section class="home">
+      <div class="home__top">
+        <img class="bg" src="images/home/home-img2.svg" alt="images" />
+        <img class="carousell" src="images/home/carousel.svg" alt="images" />
+      </div>
+      <div class="container home__xs">
+        <div class="home__content">
+          <h1 class="home__title">Быстрый и удобный шоппинг</h1>
+          <p class="home__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+            lectus odio vitae, duis nec ut velit, fermentum.
+          </p>
+          <a href="product.html"
+            ><img src="images/home/Polygon 1.svg" alt="Polygon" />Все товары</a
+          >
         </div>
       </div>
-    </nav>
-  </header>
-  <body>
-    <!--SAFARMUROD-->
-<section class="home">
-  <div class="container">
-    
-  </div>
-</section>
+      <div class="container home__lg">
+        <div class="home__content">
+          <h1 class="home__title">
+            Быстрый и удобный шоппинг, не выходя из дома.
+          </h1>
+          <p class="home__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis
+            lectus odio vitae, duis nec ut velit, fermentum.
+          </p>
+          <a href="product.html"
+            ><img src="images/home/polygon-white.svg" alt="Polygon" />Все
+            товары</a
+          >
+        </div>
+        <!-- <div class="home__left"><img src="images/home/home-img.svg" alt="ima"></div>
+  </div> -->
+      </div>
+      <img
+        id="carousell"
+        class="carousel"
+        src="images/home/carousel.svg"
+        alt="images"
+      />
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h1 class="advantages__title">Наши преимущества</h1>
+        <div class="advantages__row">
+          <a href="about.html">
+            <div class="advantages__card">
+              <img src="images/home/ic_stars.svg" alt="ima" />
+              <p>Лучший сервис</p>
+            </div>
+          </a>
+          <a href="about.html"
+            ><div class="advantages__card">
+              <img src="images/home/ic_truck.svg" alt="ima" />
+              <p>Экспресс доставка</p>
+            </div></a
+          >
+          <a href="about.html">
+            <div class="advantages__card">
+              <img src="images/home/ic_like.svg" alt="ima" />
+              <p>Лучшее качество в стране</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <h1 class="product__title">Лучшие товары</h1>
+        <div class="product__row">
+          <div class="product__card">
+            <img src="images/home/product-card-1.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store" />
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"
+                ><button class="add-btn">Добавить в корзину</button></a
+              >
+            </div>
+          </div>
+          <div class="product__card">
+            <img src="images/home/product-card-2.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store" />
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"
+                ><button class="add-btn">Добавить в корзину</button></a
+              >
+            </div>
+          </div>
+          <div class="product__card">
+            <img src="images/home/product-card-3.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store" />
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"
+                ><button class="add-btn">Добавить в корзину</button></a
+              >
+            </div>
+          </div>
+          <div class="product__card">
+            <img src="images/home/product-card-4.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store" />
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"
+                ><button class="add-btn">Добавить в корзину</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="category">
+      <div class="container">
+        <h1 class="category__title">Категории</h1>
+        <div class="category__row">
+          <div class="category__card">
+            <img src="images/home/category_4.svg" alt="" />
+            <div class="category__btm">
+              <a href="category.html"><h4>Женская обувь</h4></a>
+            </div>
+          </div>
+          <div class="category__card">
+            <img src="images/home/category_2.svg" alt="" />
+            <div class="category__btm">
+              <a href="category.html"><h4>Женская обувь</h4></a>
+            </div>
+          </div>
+          <div class="category__card">
+            <img src="images/home/category_3.svg" alt="" />
+            <div class="category__btm">
+              <a href="category.html"><h4>Женская обувь</h4></a>
+            </div>
+          </div>
+          <div class="category__card">
+            <img src="images/home/category_4.svg" alt="" />
+            <div class="category__btm">
+              <a href="category.html"><h4>Женская обувь</h4></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- JAHONGIR -->
     <section id="download">
       <div class="container">
@@ -72,6 +207,81 @@
             <div class="download__right-downloadapp">
               <a href="#"><img src="images/home/app-store.svg" alt="" /></a>
               <a href="#"><img src="images/home/google-play.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <h1 class="product__title">Лучшие товары</h1>
+        <div class="product__row">
+          <div class="product__card">
+            <img src="images/home/product-card-4.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store" />
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"
+                ><button class="add-btn">Добавить в корзину</button></a
+              >
+            </div>
+          </div>
+          <div class="product__card">
+            <img src="images/home/product-card-1.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store" />
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"
+                ><button class="add-btn">Добавить в корзину</button></a
+              >
+            </div>
+          </div>
+          <div class="product__card">
+            <img src="images/home/product-card-2.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store" />
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"
+                ><button class="add-btn">Добавить в корзину</button></a
+              >
+            </div>
+          </div>
+          <div class="product__card">
+            <img src="images/home/product-card-3.svg" alt="product-card" />
+            <div class="feature">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
+                odio sed nascetur.
+              </p>
+              <div class="price">
+                <img src="images/home/product-star.svg" alt="app-store" />
+                <h6>855 у.е.</h6>
+              </div>
+              <a href="cart.html"
+                ><button class="add-btn">Добавить в корзину</button></a
+              >
             </div>
           </div>
         </div>
@@ -103,62 +313,7 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <div class="footer-left">
-            <div class="footer__left-logo">
-              <h4>про imperia</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
-                pretium aenean dignissim sit cursus dictumst adipiscing nunc.
-              </p>
-              <div class="footer__logo-img">
-                <img src="./images/home/footer-logo.svg" alt="" />
-              </div>
-            </div>
-            <div class="footer__left-contact">
-              <div class="footer__contact-top">
-                <h4>контакты</h4>
-                <div class="footer__top-links">
-                  <a href="tel:+998 90 958 78 87">+998 90 958 78 87</a>
-                  <a href="mailto: support@fonon.uz">support@fonon.uz</a>
-                </div>
-              </div>
-              <div class="footer__contact-bottom">
-                <h4>рабочее время</h4>
-                <div class="footer__bottom-text">
-                  <p>По будням 9:00 to 18:00</p>
-                  <p>В выходные 11:00 to 18:00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer-right">
-            <div class="footer__right-menu">
-              <h4>Меню</h4>
-              <div class="footer__right-menus">
-                <a href="index.html">Главная</a>
-                <a href="about.html">О нас</a>
-                <a href="categories.html">Категории</a>
-                <a href="partnership.html">Сотрудничество</a>
-              </div>
-            </div>
-            <div class="footer__right-categories">
-              <h4>категории</h4>
-              <div class="footer__categories-menus">
-                <a href="#">Женская одежда</a>
-                <a href="#">Мужская одежда</a>
-                <a href="#">Детская одежда</a>
-                <a href="#">Обувь</a>
-                <a href="#">Сумки</a>
-                <a href="#">Аксесуары</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer w3-include-html="footer.html"></footer>
     <script src="js/main.js"></script>
   </body>
 </html>
