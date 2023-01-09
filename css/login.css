@@ -12,10 +12,34 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 ul {
   list-style-type: none;
+}
+
+#backtop {
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#backtop img {
+  width: 30px;
+  height: 30px;
 }
 
 .container {
@@ -74,7 +98,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  flex-grow: 1;
 }
 .navbar__list {
   display: flex;
@@ -82,9 +105,9 @@ ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 16px;
+  margin-right: 197px;
 }
-.navbar__list a {
+.navbar__list .link {
   font: normal 500 14px/19.6px "Montserrat";
   color: #000;
   margin: 0 12px;
@@ -97,8 +120,16 @@ ul {
   flex-wrap: wrap;
   gap: 15px;
 }
-.navbar__join button {
+.navbar__side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar__side .cart-btn {
   margin-left: 28px;
+  cursor: pointer;
 }
 .navbar .toggle-btn {
   display: none;
@@ -108,13 +139,13 @@ ul {
   border: none;
 }
 .navbar .sign {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   padding: 5px 10px;
   letter-spacing: 0.44px;
-  font-feature-settings: "pnum" on, "lnum" on;
   color: #0d0d0d;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -131,7 +162,13 @@ ul {
   padding: 14px 30px !important;
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1220px) {
+  .navbar__logo {
+    display: none;
+  }
+  .navbar .container__bottom {
+    background-color: #fff;
+  }
   .navbar__menus {
     position: fixed;
     display: flex;
@@ -141,7 +178,7 @@ ul {
     flex-wrap: wrap;
     flex-wrap: nowrap;
     top: 0;
-    right: -1500px;
+    left: -1500px;
     bottom: 0;
     width: 100%;
     transition: 0.3s;
@@ -161,6 +198,16 @@ ul {
     font-size: 1.875rem;
     line-height: 55px;
     color: #fff;
+  }
+  .navbar__side {
+    position: relative;
+    width: 100%;
+  }
+  .navbar__side .toggle-btn:after {
+    content: url("../../images/home/Logo.svg");
+    position: absolute;
+    top: -6px;
+    left: 40px;
   }
   .navbar .sign:hover {
     background-color: #000;
@@ -298,96 +345,15 @@ footer {
   grid-row-gap: 10px;
 }
 
-.uz {
-  height: 40px;
-  background: #0D0D0D;
-  padding: 13px 0;
+#rgwr08gwo {
+  margin-top: 126px;
+  padding: 56px 0 64px;
+  background: #E5E5E5;
 }
-.uz a:first-child {
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 140%;
-  /* identical to box height, or 14px */
-  text-align: center;
-  letter-spacing: 1.5px;
-  font-feature-settings: "pnum" on, "lnum" on;
-  /* White */
-  color: #FFFFFF;
+#rgwr08gwo .container {
+  margin: 0 auto;
 }
-.uz a:last-child {
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 140%;
-  /* identical to box height, or 14px */
-  text-align: center;
-  letter-spacing: 1.5px;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.nav {
-  background: #FAFAFA;
-}
-
-.rgr {
-  /* Shadow / 700 */
-  background: #FAFAFA;
-  box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-.rgr .nav-left {
-  display: flex;
-}
-.rgr .nav-left .menus {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 24px;
-  padding-left: 98px;
-}
-.rgr .nav-left .menus a {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 140%;
-  /* identical to box height, or 20px */
-  text-align: center;
-  letter-spacing: 0.1px;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #000000;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-}
-
-main {
-  padding-top: 120px;
-}
-
-.nav-right {
-  display: flex;
-}
-.nav-right button:first-child {
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-  border: none;
-}
-.nav-right button {
-  padding: 4px 8px;
-}
-.nav-right .regis {
-  margin-left: 15px;
-  background: #FFC000;
-  border-radius: 4px;
-  border: none;
-  margin-right: 43px;
-}
-
-.p {
+#rgwr08gwo .p {
   text-align: center;
   font-weight: 700;
   font-size: 34px;
@@ -398,22 +364,21 @@ main {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
-
-#rgwr08gwo {
-  padding: 56px 0 64px;
-}
 #rgwr08gwo .need {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 64px;
 }
 #rgwr08gwo input {
-  width: 555px;
+  width: 100%;
   height: 60px;
-  border: 1px solid #DBDEE7;
+  border: 2px solid #bdbebe;
   border-radius: 6px;
   padding-left: 16px;
   margin-top: 8px;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
 }
 #rgwr08gwo input:first-child {
   padding-left: 24px;
@@ -445,36 +410,4 @@ main {
   border-radius: 6px;
   padding: 13px;
   border: none;
-}
-
-footer h4 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 140%;
-  /* identical to box height, or 20px */
-  letter-spacing: 0.75px;
-  font-feature-settings: "pnum" on, "lnum" on;
-  /* Black */
-  color: #000000;
-  padding-bottom: 16px;
-}
-footer p {
-  padding-bottom: 10px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
-  /* or 22px */
-  letter-spacing: 0.25px;
-  font-feature-settings: "pnum" on, "lnum" on;
-  /* Black */
-  color: #000000;
-}
-
-.footer-oko {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.footer-oko .igofuw {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
