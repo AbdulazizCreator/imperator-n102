@@ -185,7 +185,7 @@ ul {
     left: -1500px;
     bottom: 0;
     width: 100%;
-    transition: 0.3s;
+    transition: 0.5s;
     z-index: 999;
     background-color: #FFC000;
     flex-grow: 0;
@@ -854,6 +854,7 @@ html {
   background-color: #ffffff;
 }
 #imperia .imperia {
+  margin-top: 64px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;

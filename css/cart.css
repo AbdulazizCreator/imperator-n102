@@ -188,7 +188,7 @@ ul {
     left: -1500px;
     bottom: 0;
     width: 100%;
-    transition: 0.3s;
+    transition: 0.5s;
     z-index: 999;
     background-color: #FFC000;
     flex-grow: 0;
