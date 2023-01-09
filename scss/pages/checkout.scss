@@ -96,9 +96,13 @@ body {
             align-items: flex-end;
           }
         }
+        .container-img{
+          @media(max-width: 700px){
+            display: none;
+          }
+        }
       }
       .input-payment{
-        display: none;
         &-img{
           display: none;
           img {
@@ -255,7 +259,6 @@ body {
           }
         }
       }
-    }
     .container-shop {
       &-logo {
         h1 {
@@ -309,5 +312,3 @@ body {
         margin-bottom: 54px;
       }
     }
-  }
-}
