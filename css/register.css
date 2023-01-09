@@ -320,21 +320,21 @@ footer {
   grid-row-gap: 10px;
 }
 
-.center {
+.urta {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 200px;
 }
 
 .regester {
   display: grid;
   grid-template-columns: auto auto;
-  padding-top: 140px;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
-
-.regester-lift {
-  padding-top: 70px;
+.regester img {
+  width: 100%;
 }
 
 .partnership-right {
@@ -347,6 +347,7 @@ footer {
   font-family: cursive;
   font-size: 20px;
   width: 100%;
+  outline: none;
 }
 .partnership-right a {
   padding: 10px 60px;
@@ -355,14 +356,22 @@ footer {
   color: white;
 }
 
+.relative {
+  position: relative;
+}
+
+.relative i {
+  cursor: pointer;
+  font-size: 25px;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-55%);
+  right: 20px;
+}
+
 @media (max-width: 900px) {
   .regester {
-    grid-template-columns: auto;
-    gap: 50px;
-    padding-top: 0px;
-  }
-  .partnership-right {
-    padding: 0;
-    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
   }
 }
