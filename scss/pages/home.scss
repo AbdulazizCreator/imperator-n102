@@ -4,7 +4,7 @@
 @use "../abstracts/mixin";
 @use "../components/product-card";
 .containerxl {
-  max-width: 1440px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 5px;
 }
@@ -233,7 +233,7 @@ html {
   .home {
     position: relative;
     // background: linear-gradient(99.05deg, #E1AA00 0%, #FFC000 74.72%);
-    background-image: url("../../images/home/background.svg");
+    background-image: url("../../images/home/home-img.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
