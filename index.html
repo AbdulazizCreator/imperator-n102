@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/home.min.css" />
     <!-- <link rel="stylesheet" href="css/about.css"> -->
     <title>Safarmurod & Jahongir</title>
@@ -19,7 +33,6 @@
     <section class="home">
       <div class="home__top">
         <img class="bg" src="images/home/home-img2.svg" alt="images" />
-        <img class="carousell" src="images/home/carousel.svg" alt="images" />
       </div>
       <div class="container home__xs">
         <div class="home__content">
@@ -32,6 +45,9 @@
             ><img src="images/home/Polygon 1.svg" alt="Polygon" />Все товары</a
           >
         </div>
+      </div>
+      <div class="home__top">
+        <img class="carousell" src="images/home/carousel.svg" alt="images" />
       </div>
       <div class="container home__lg">
         <div class="home__content">
@@ -50,12 +66,6 @@
         <!-- <div class="home__left"><img src="images/home/home-img.svg" alt="ima"></div>
   </div> -->
       </div>
-      <img
-        id="carousell"
-        class="carousel"
-        src="images/home/carousel.svg"
-        alt="images"
-      />
     </section>
     <section class="advantages">
       <div class="container">
@@ -85,76 +95,105 @@
     <section class="product">
       <div class="container">
         <h1 class="product__title">Лучшие товары</h1>
-        <div class="product__row">
-          <div class="product__card">
-            <img src="images/home/product-card-1.svg" alt="product-card" />
-            <div class="feature">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
-                odio sed nascetur.
-              </p>
-              <div class="price">
-                <img src="images/home/product-star.svg" alt="app-store" />
-                <h6>855 у.е.</h6>
+        <!-- <div class="product__row"> -->
+        <div class="product-carousel owl-carousel owl-theme">
+          <div class="item">
+            <div class="product__card">
+              <img src="images/home/product-card-1.svg" alt="product-card" />
+              <div class="feature">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  sed odio sed nascetur.
+                </p>
+                <div class="price">
+                  <img src="images/home/product-star.svg" alt="app-store" />
+                  <h6>855 у.е.</h6>
+                </div>
+                <a href="cart.html"
+                  ><button class="add-btn">Добавить в корзину</button></a
+                >
               </div>
-              <a href="cart.html"
-                ><button class="add-btn">Добавить в корзину</button></a
-              >
             </div>
           </div>
-          <div class="product__card">
-            <img src="images/home/product-card-2.svg" alt="product-card" />
-            <div class="feature">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
-                odio sed nascetur.
-              </p>
-              <div class="price">
-                <img src="images/home/product-star.svg" alt="app-store" />
-                <h6>855 у.е.</h6>
+          <div class="item">
+            <div class="product__card">
+              <img src="images/home/product-card-1.svg" alt="product-card" />
+              <div class="feature">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  sed odio sed nascetur.
+                </p>
+                <div class="price">
+                  <img src="images/home/product-star.svg" alt="app-store" />
+                  <h6>855 у.е.</h6>
+                </div>
+                <a href="cart.html"
+                  ><button class="add-btn">Добавить в корзину</button></a
+                >
               </div>
-              <a href="cart.html"
-                ><button class="add-btn">Добавить в корзину</button></a
-              >
             </div>
           </div>
-          <div class="product__card">
-            <img src="images/home/product-card-3.svg" alt="product-card" />
-            <div class="feature">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
-                odio sed nascetur.
-              </p>
-              <div class="price">
-                <img src="images/home/product-star.svg" alt="app-store" />
-                <h6>855 у.е.</h6>
+          <div class="item">
+            <div class="product__card">
+              <img src="images/home/product-card-1.svg" alt="product-card" />
+              <div class="feature">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  sed odio sed nascetur.
+                </p>
+                <div class="price">
+                  <img src="images/home/product-star.svg" alt="app-store" />
+                  <h6>855 у.е.</h6>
+                </div>
+                <a href="cart.html"
+                  ><button class="add-btn">Добавить в корзину</button></a
+                >
               </div>
-              <a href="cart.html"
-                ><button class="add-btn">Добавить в корзину</button></a
-              >
             </div>
           </div>
-          <div class="product__card">
-            <img src="images/home/product-card-4.svg" alt="product-card" />
-            <div class="feature">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed
-                odio sed nascetur.
-              </p>
-              <div class="price">
-                <img src="images/home/product-star.svg" alt="app-store" />
-                <h6>855 у.е.</h6>
+          <div class="item">
+            <div class="product__card">
+              <img src="images/home/product-card-1.svg" alt="product-card" />
+              <div class="feature">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  sed odio sed nascetur.
+                </p>
+                <div class="price">
+                  <img src="images/home/product-star.svg" alt="app-store" />
+                  <h6>855 у.е.</h6>
+                </div>
+                <a href="cart.html"
+                  ><button class="add-btn">Добавить в корзину</button></a
+                >
               </div>
-              <a href="cart.html"
-                ><button class="add-btn">Добавить в корзину</button></a
-              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="product__card">
+              <img src="images/home/product-card-1.svg" alt="product-card" />
+              <div class="feature">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  sed odio sed nascetur.
+                </p>
+                <div class="price">
+                  <img src="images/home/product-star.svg" alt="app-store" />
+                  <h6>855 у.е.</h6>
+                </div>
+                <a href="cart.html"
+                  ><button class="add-btn">Добавить в корзину</button></a
+                >
+              </div>
             </div>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </section>
     <section class="category">
@@ -315,5 +354,44 @@
     </section>
     <footer w3-include-html="footer.html"></footer>
     <script src="js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".home-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+      });
+      $(".product-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          500: {
+            items: 2,
+          },
+          800: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+            loop: false,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

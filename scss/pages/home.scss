@@ -9,7 +9,7 @@
   padding: 0 5px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 .home {
@@ -176,28 +176,28 @@ html{
     }
   }
 }
-@media (min-width:768px){
+@media (min-width: 768px) {
   .category {
-    &__row{
-      grid-template-columns: repeat(2,1fr);
+    &__row {
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 30px;
     }
     &__card {
       position: relative;
       overflow: hidden;
-      h4{
+      h4 {
         color: var.$primary-color;
         text-align: center;
       }
     }
-    &__card:hover{
-      img{
+    &__card:hover {
+      img {
         transition: 0.5s;
         position: absolute;
         transform: translateY(-50px);
         border-radius: 0;
       }
-      .category__btm{
+      .category__btm {
         transform: translateY(0);
       }
     }
@@ -221,14 +221,13 @@ html{
       grid-gap: 20px;
       justify-content: space-between;
     }
-
   }
   .category {
-    &__row{
-      grid-template-columns: repeat(4,1fr);
+    &__row {
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 30px;
-    }}
-
+    }
+  }
 }
 @media (min-width: 1180px) {
   .home {
@@ -303,7 +302,6 @@ html{
 }
 
 #imperia {
- 
   background-color: #ffffff;
   .imperia {
     margin-top: 64px;
@@ -391,6 +389,29 @@ html{
       letter-spacing: 0.25px;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #0d0d0d;
+    }
+  }
+}
+
+.owl-theme {
+  .owl-dots {
+    .owl-dot {
+      padding: 10px !important;
+      border-radius: 50%;
+      span {
+        margin: 0;
+      }
+      &.active {
+        border: 1px solid black;
+        span {
+          background-color: black;
+        }
+      }
+      &:hover {
+        span {
+          background: black;
+        }
+      }
     }
   }
 }
