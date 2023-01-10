@@ -1,2 +1,150 @@
 @use "../global.scss";
 @use "../components/category-card";
+@use "../components/product-card";
+
+.product-whiteman {
+  #change {
+    margin-top: 20px;
+  }
+  .product-hat {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    background: #ffffff;
+    border-radius: 12px;
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }   
+    }
+    
+    .right {
+      padding: 25px 25px 27px 30px;
+      .right-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        h4 {
+          font-family: "Montserrat";
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 140%;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #040921;
+        }
+      }
+      p {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        padding: 10px 0;
+      }
+      .size {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        @media (max-width: 800px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+      .add {
+        display: flex;
+        gap: 40px;
+        p {
+          font-family: "Montserrat";
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          letter-spacing: 0.44px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #0d0d0d;
+        }
+      }
+      .pilus-minus {
+        display: flex;
+        .minus {
+          padding: 10px 20px 10px 20px;
+          background: #ffc000;
+          color: white;
+        }
+        p {
+          background: #f2f2f2;
+          font-family: "Montserrat";
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: 0.15px;
+          font-feature-settings: "pnum" on, "lnum" on;
+          color: #000000;
+          padding: 5px 42px 5px 43px;
+        }
+        .pilus {
+          padding: 10px 20px 10px 20px;
+          background: #ffc000;
+          color: white;
+        }
+      }
+    }
+  }
+
+#price {
+  .price {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      gap: 50px;
+    }   
+    .total-price {
+      display: flex;
+      gap: 16px;
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+      }
+    }
+    .design {
+      button {
+        padding: 18px 111px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        background: #FFC000;
+        border: none;
+      }
+    }
+  }
+}
+
+.product {
+  .margin-bottom {
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 786px) {
+  .product-whiteman {
+    // display: block;
+  }
+}
